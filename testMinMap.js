@@ -74,7 +74,7 @@
        url:"/city/cityBuilder/1042044",
        // url: "./cityBuilder/1/map.bundle.json",
        resourceConfig : {
-           resourcePrefix: '/Resources/CityMap/admin/1042044'
+           resourcePrefix: '/Resources'
        },
        complete: function (event) {
            console.log(event.object.userLayers.length);
