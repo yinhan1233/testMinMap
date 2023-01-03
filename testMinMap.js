@@ -2,11 +2,11 @@
  * 说明：小地图控件
  * 难度：★★☆☆☆
  */
-var app = new THING.App({
-    url: 'https://www.thingjs.com/static/models/factory',
-    background: '#000000',
-    env: 'Seaside',
-});
+// var app = new THING.App({
+//     url: 'https://www.thingjs.com/static/models/factory',
+//     background: '#000000',
+//     env: 'Seaside',
+// });
 // var control;
 // app.on('load', function () {
 //     // 创建提示
