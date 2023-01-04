@@ -133,7 +133,7 @@
  // 设置app背景为黑色
  app.background = [0, 0, 0];
  // 引用地图组件脚本
- THING.Utils.dynamicLoad(['./source/uearth.min.js'], function () {
+ THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
      app.create({
        type: 'Map',
        // 地图场景名：唐山市路北区场景
