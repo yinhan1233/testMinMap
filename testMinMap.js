@@ -112,7 +112,7 @@
 //         console.log('加载完成');
 //     });
 // })
-// // 离线开发引入森大屏图表脚本
+// 离线开发引入森大屏图表脚本
 // THING.Utils.dynamicLoad(['./static/release/thingjs-charts.umd.js'],
 // async function () {
 //     const scenebundle = THING.CHARTS.Utils.loadBundle(
