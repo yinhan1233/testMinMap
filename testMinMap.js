@@ -137,7 +137,7 @@
      app.create({
        type: 'Map',
        // 地图场景名：唐山市路北区场景
-       url:"/city/cityBuilder/admin/1042044",
+       url:"/city/cityBuilder/1042044",
        // url: "./cityBuilder/1/map.bundle.json",
        resourceConfig : {
            resourcePrefix: './'
@@ -147,3 +147,4 @@
        }
    });
  });
+
