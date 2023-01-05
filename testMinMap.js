@@ -8,8 +8,8 @@
     app.create({
         type: 'Map',
         // 地图场景名：唐山市路北区场景
-        // url: defaultPath + '/map.bundle.json',
-        url: "./city/cityBuilder/1042044/",
+        url: defaultPath + '/map.bundle.json',
+        // url: "./city/cityBuilder/1042044/",
        resourceConfig : {
             resourcePrefix: defaultPath
         },
