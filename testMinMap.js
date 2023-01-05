@@ -26,7 +26,7 @@ THING.Utils.dynamicLoad(['./static/js/thing.diagram.min.js'], function () {
     const graph = new THING.DIAGRAM.Graph({
         container: 'div2d', // 容器元素 id
         url: './diagrams/c3c94e7a7548d9da/topo.json', // 拓扑场景资源路径
-        resourceRootPath: '/Resources'
+        resourceRootPath: '/Resources/topo/admin/7917cc2512ae9612'
     });
     // 视图加载完成
     graph.on('load', () => {
