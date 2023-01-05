@@ -11,7 +11,7 @@
        url: defaultPath + '/map.bundle.json',
        // url: "./cityBuilder/1/map.bundle.json",
        resourceConfig : {
-           resourcePrefix: defaultPath
+           resourcePrefix: '/Resources/CityMap/admin/1042044'
        },
        complete: function (event) {
            console.log(event.object.userLayers.length);
