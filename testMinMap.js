@@ -21,11 +21,11 @@
 // 创建APP对象
 var app = new THING.App();
 // 引用拓扑组件脚本
-THING.Utils.dynamicLoad(['./static/js/thing.diagram.min.js'], function () {
+THING.Utils.dynamicLoad(['/static/js/thing.diagram.min.js'], function () {
     // 初始化拓扑场景
     const graph = new THING.DIAGRAM.Graph({
         container: 'div2d', // 容器元素 id
-        url: './diagrams/c3c94e7a7548d9da/topo.json', // 拓扑场景资源路径
+        url: './diagrams/7917cc2512ae9612/topo.json', // 拓扑场景资源路径
         resourceRootPath: '/Resources/topo/admin/7917cc2512ae9612'
     });
     // 视图加载完成
