@@ -33,26 +33,26 @@
 //         console.log('加载完成');
 //     });
 // })
- // 加载地图
- var app = new THING.App();
- // 设置app背景为黑色
- app.background = [0, 0, 0];
- // 引用地图组件脚本
- THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
-     let defaultPath = '/Resources/CityMap/admin/1043850';
-     app.create({
-       type: 'Map',
-       // 地图场景名：路北区
-       url: defaultPath + '/map.bundle.json',
-       // url: "./cityBuilder/1/map.bundle.json",
-       resourceConfig : {
-           resourcePrefix: defaultPath
-       },
-       complete: function (event) {
-           console.log(event.object.userLayers.length);
-       }
-   });
- });
+//  // 加载地图
+//  var app = new THING.App();
+//  // 设置app背景为黑色
+//  app.background = [0, 0, 0];
+//  // 引用地图组件脚本
+//  THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
+//      let defaultPath = '/Resources/CityMap/admin/1043850';
+//      app.create({
+//        type: 'Map',
+//        // 地图场景名：路北区
+//        url: defaultPath + '/map.bundle.json',
+//        // url: "./cityBuilder/1/map.bundle.json",
+//        resourceConfig : {
+//            resourcePrefix: defaultPath
+//        },
+//        complete: function (event) {
+//            console.log(event.object.userLayers.length);
+//        }
+//    });
+//  });
 
 //   // 加载地图
 //   var app = new THING.App();
@@ -74,5 +74,26 @@
 //         }
 //     });
 //   });
+
+ // 加载地图
+ var app = new THING.App();
+ // 设置app背景为黑色
+ app.background = [0, 0, 0];
+ // 引用地图组件脚本
+ THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
+     let defaultPath = '/Resources/CityMap/admin/131982';
+     app.create({
+       type: 'Map',
+       // 地图场景名：mapTest
+       url: defaultPath + '/map.bundle.json',
+       // url: "./cityBuilder/1/map.bundle.json",
+       resourceConfig : {
+           resourcePrefix: defaultPath
+       },
+       complete: function (event) {
+           console.log(event.object.userLayers.length);
+       }
+   });
+ });
 
 
