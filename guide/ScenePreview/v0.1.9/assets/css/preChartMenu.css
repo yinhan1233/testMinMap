@@ -1,0 +1,728 @@
+
+#prechart-menu-Campus{
+    position: absolute;
+    margin-top: 29px;
+    width: 325px;
+    height: 572px;
+    display: inline-block;
+    right: 15px;
+    position: absolute;
+    top: -19px;
+    z-index: 10!important;
+    background: #2b2d2f;
+    box-shadow: 1px 4px 23px 6px rgb(0 0 0 / 15%);
+    border-radius: 2px;
+    border-top: 1px solid rgba(76, 80, 85, 0.41);
+}
+.panelModel-chart .panelHeader {
+    background: none;
+    border-bottom: 1px solid #505354;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    border-radius: 3px;
+}
+.panelModel-chart .panelHeader .panelTitle {
+    color: #c6c6c6;
+    font-size: 12px;
+    background: none;
+    height: 30px;
+    line-height: 30px;
+    cursor: default;
+    margin-left: -25px;
+    padding: 0;
+    font-style: normal;
+}
+.panelModel-chart .panelHeader .panelNumber {
+    color: #c6c6c6;
+    font-size: 12px;
+    cursor: default;
+    line-height: 30px;
+}
+.panelModel-chart .panelHeader .close,  .preview-chart-panel .preview-close.close{
+    position: absolute;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    top: 9px !important;
+    right: 8px !important;
+    background: url("../img/preLevelControl/close2.png") no-repeat;
+    background-size: contain;
+    opacity: 0.6;
+}
+.panelModel-chart .panelHeader .close:hover{
+    opacity: 0.8;
+}
+.panelModel-chart .panelHeader .panelIcon {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    top: 5px;
+    right: 24px;
+}
+.panelModel-chart .panelHeader .source_type {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    float: left;
+    left: 15px;
+    top: 8px;
+    z-index: 2;
+    cursor: pointer;
+}
+.panelModel-chart .panelHeader .seticonfont.icon-shuaxin.pre-refresh {
+    color: #8f9091;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 22px;
+}
+.panelModel-chart .panelHeader .seticonfont.icon-shuaxin.pre-refresh:hover {
+    color:rgba(255, 255, 255, 0.7)
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    color: #c6c6c6;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-bars:before {
+    content: "\f0c9";
+}
+.fa-search:before {
+    color: #878787b8;
+}
+.panelModel-chart .source_ul {
+    position: absolute;
+    width: max-content;
+    background: #2b2d2f;
+    box-shadow: 0px 3px 8px 0px rgb(0 0 0 / 25%);
+    border-radius: 2px;
+    border: 1px solid #4c5055;
+    color: #ccc;
+    font-size: 12px;
+    top: 12px;
+    right: 100%;
+    margin-right: 15px;
+    display: none;
+}
+.panelModel-chart .source_ul.showState{
+    display: block;
+}
+.panelModel-chart .source_ul li{
+    padding: 0 8px;
+    line-height: 35px;
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    border-top: 1px solid #434547;
+    min-width: 60px;
+}
+.panelModel-chart .source_ul li:hover{
+    background: #094771;
+}
+.panelModel-chart .source_ul li.checkedType{
+    background: #094771;
+    color: #fff;
+}
+.scenes-menu .card .card-body p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #c6c6c6;
+    line-height: 22px;
+}
+.panelModel-chart .panelIcon span:first-child{
+    margin-left: 0;
+}
+.panelModel-chart ul.panelMenu {
+    display:none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    line-height: 23px;
+    width: auto;
+    word-break: keep-all;
+    box-shadow: 0 2px 8px #000;
+    color: #bbb;
+    background-color: #26292b;
+    min-width: 84px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 2;
+    font-size: 12px;
+}
+.panelModel-chart ul.panelMenu li {
+    display: flex;
+    height: 28px;
+    padding: 3px 25px;
+    padding-right: 66px;
+    justify-content: space-between;
+    color: #ffffffcc;
+    font-family: MicrosoftYaHei;
+    position: relative;
+    cursor: default;
+}
+.panelModel-chart ul.panelMenu li:hover{
+    background: #094771;
+}
+.panelModel-chart ul.panelMenu hr{
+    height: 1px;
+    background: #626465;
+    margin: 6px 10px 6px 10px;
+    border: none;
+}
+.panelModel-chart .panelBody .chart-search-box {
+    width: calc(100% - 20px);
+    margin: 11px 10px;
+    background: #1c1f20;
+    border-radius: 2px;
+    border: 1px solid #4d5153;
+    height: 30px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.panelModel-chart .panelBody .chart-search-box .search-input {
+    background: none;
+    color: #777777;
+    height: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+    touch-action: manipulation;
+}
+.panelModel-chart .panelBody .scenes-menu{
+    width: 325px;
+    height: 436px;
+    overflow: visible;
+    padding-top: 4px;
+    padding-left: 6px;
+    position: relative;
+}
+.panelModel-chart .panelBody .card {
+    width: 96px;
+    height: 54px;
+    background: #3d3f40;
+    border-radius: 2px;
+    margin-left: 5.2px;
+    margin-bottom: 13px;
+
+}
+
+.panelModel-chart .scenes-menu .card {
+    text-align: center;
+    top: 11px;
+    margin-left: 5.2px;
+    display: inline-block;
+    margin-bottom: 13px;
+    transition: box-shadow .2s ease;
+    position: relative;
+    border-radius: 3px;
+    animation: pat .8s 1;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    text-decoration: none;
+}
+.panelModel-chart  a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+.panelModel-chart .panelBody .scenes-menu .screenshot-container {
+    width: 100%;
+    height: 100%;
+}
+.panelModel-chart .panelBody .scenes-menu a{
+    touch-action: manipulation;
+}
+.panelModel-chart .panelBody .card a .card-img-top {
+    border-radius: 2px;
+}
+.panelModel-chart .scenes-menu .screenshot-container .card-img-top {
+    width: 99%;
+    height: 99%;
+}
+.panelModel-chart .scenes-menu .card a .card-img-top .newFile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+.panelModel-chart .scenes-menu .card a .card-img-top .add {
+    display: flex;
+    flex-direction: column;
+}
+.scenes-menu .card a .card-img-top .add {
+    border-radius: 3px;
+    width: 80px;
+    margin: auto;
+    padding: 5px 0 3px;
+    display: block;
+    cursor: pointer;
+}
+.panelModel-chart .scenes-menu .card a .card-img-top .add i{
+    left: 38px;
+    background: #999999;
+}
+.scenes-menu .card a .card-img-top .add i {
+    display: inline-block;
+    background: #ff8000;
+    height: 20px;
+    position: relative;
+    width: 2px;
+    top: 1px;
+}
+.panelModel-chart .scenes-menu .card a .card-img-top .add i:after{
+    background: #999999;
+}
+.scenes-menu .card a .card-img-top .add i::after {
+    background: #ff8000;
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    transform: rotateZ(90deg);
+}
+.panelModel-chart .panelBody .card a .card-img-top .add label {
+    display: block;
+    margin: 5px auto;
+    font-size: 12px;
+    color: #999999;
+    width: auto;
+    font-size: 14px !important;
+}
+.scenes-menu .card a .card-img-top .add label {
+    font-size: 15px;
+    color: #ff8000;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: none;
+    width: 44px;
+    border-radius: 3px;
+    touch-action: manipulation;
+}
+.panelModel-chart .scenes-menu .card.card-chart:hover{
+    box-shadow: 0 1px 1px rgb(97 108 121 / 30%), 0 7px 18px 0 rgb(97 108 121 / 40%);
+}
+.panelModel-chart .card.chartli.card-chart {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.panelModel-chart .panelBody .card .card-body {
+    display: none;
+    position: absolute;
+    bottom: -14px;
+    width: auto;
+    height: 22px;
+    background: #000000;
+    border-radius: 2px;
+    opacity: 0.6976;
+    font-size: 12px;
+    padding: 0 3px;
+    left: calc(100% - 33px);
+    z-index: 2;
+}
+.scenes-menu .card .card-body {
+    padding: 0.5rem 0.25rem;
+    font-size: 9px;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.panelModel-chart .scenes-menu .card.card-chart:hover .card-body{
+    display: block;
+}
+.scenes-menu .screenshot-container .card-img-top {
+    width: 99%;
+    height: 99%;
+}
+.scenes-menu .card a img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    display: inline-block;
+}
+.panelModel-chart .scenes-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 13px;
+}
+.panelModel-chart .scenes-footer {
+    border-top: 1px solid #505354;
+    padding-top: 15px !important;
+}
+.panelModel-chart .scenes-footer div {
+    font-size: 12px;
+    margin-right: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #c6c6c6;
+}
+.panelModel-chart .scenes-footer .nowpage {
+    width: 61px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    border-radius: 2px;
+    height: 30px;
+    font-size: 12px;
+    cursor: default;
+    width: auto;
+    width: 60px;
+    height: 28px;
+    background: #1c1f20;
+    border: 1px solid #4d5153;
+    line-height: 25px;
+    margin: -4px 15px 0 8px;
+    padding: 0 5px;
+    color: #c6c6c6;
+}
+.preview-chart-panel {
+    height: 610px;
+    position: absolute;
+    right: 325px;
+    top: -1px;
+    display: none;
+    background: #2b2d2f;
+    box-shadow: 1px 4px 23px 6px rgb(0 0 0 / 15%);
+    border-radius: 2px;
+    border-top: 1px solid rgba(76, 80, 85, 0.41);
+    width: 820px;
+}
+.preview-chart-panel .preview-title {
+    border-bottom: 1px solid #4d5153;
+    height: 30px;
+    line-height: 30px;
+}
+.preview-chart-panel .preview-title span.FREE_TIP {
+    background-image: url(../img/free.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    left: 0;
+}
+.preview-chart-panel .preview-title span.PER_TIP{
+    background-image: url(../../../../image/icon_per.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    left: 0;
+}
+.preview-chart-panel .preview-title span.BUY_TIP {
+    background-image: url(../img/buy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    left: 0;
+}
+.preview-chart-panel .preview-title span.ISBUY_TIP {
+    background-image: url(../img/isBuy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    left: 0;
+}
+.preview-chart-panel .preview-title .title-text {
+    color: #c6c6c6;
+    font-size: 12px;
+    background: none;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+i.fa.icon.iconfont.icon-sousuo {
+    left: 20px;
+}
+.preview-chart-panel .preview-img {
+    height: 610px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    padding: 10px;
+}
+.preview-chart-panel .preview-img img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 610px;
+}
+.preview-chart-panel .preview-img .preview-tools {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    height: 32px;
+    overflow: hidden;
+}
+.preview-chart-panel .preview-img .preview-tools .tool-item {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 11px 20px 0 rgb(97 108 121 / 17%);
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 50%;
+    float: left;
+}
+.preview-chart-panel .previewImgLeft {
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    background: gray;
+    opacity: 0.3;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    top: 45%;
+    cursor: pointer;
+    z-index: 2;
+    left: 10px;
+}
+.preview-chart-panel .previewImgRight {
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    background: gray;
+    opacity: 0.3;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    top: 45%;
+    cursor: pointer;
+    z-index: 2;
+    right: 10px;
+}
+.preview-chart-panel .preview-img .preview-imgBG {
+    height: 450px;
+    width: 800px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 610px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panelModel-chart .chartli span.FREE_TIP {
+    background-image: url(../img/free.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+    left: 0;
+}
+.panelModel-chart .chartli span.BUY_TIP {
+    background-image: url(../img/buy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+    left: 0;
+}
+.panelModel-chart .chartli span.PER_TIP {
+    background-image: url(../../../../image/icon_per.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    left: 1px;
+    top: 1px;
+}
+.panelModel-chart .chartli span.ISBUY_TIP {
+    background-image: url(../img/isBuy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+    left: 0;
+}
+.panelModel-chart .chartli span.BUY_TIP_SUO{
+    background-image: url(../../../../image/buysuo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    z-index: 2;
+    right: 1px;
+    top: -4px;
+}
+ul.preChart-panelMenu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    line-height: 23px;
+    width: auto;
+    word-break: keep-all;
+    box-shadow: 0 2px 8px #000;
+    color: #bbb;
+    background-color: #26292b;
+    min-width: 84px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    z-index: 2;
+    font-size: 12px;
+    z-index: 99;
+}
+ul.preChart-panelMenu li {
+    display: flex;
+    height: 28px;
+    padding: 3px 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+    color: #ffffffcc;
+    font-family: MicrosoftYaHei;
+    position: relative;
+    cursor: default;
+}
+ul.preChart-panelMenu hr {
+    height: 1px;
+    background: #626465;
+    margin: 6px 10px 6px 10px;
+    border: none;
+}
+.applyTage-per{
+    color: #67c23a;
+    top: 10px;
+    left: 82px;
+
+}
+.applyTage-off {
+    color: #e6a23c;
+    top: 10px;
+    left: 82px;
+}
+
+ul.preChart-panelMenu li.item:hover {
+    background-color: #094771;
+    cursor: pointer; 
+}
+ul.preChart-panelMenu li.item.disable{
+    pointer-events: none;
+    color: #7d7c7c !important;
+}
+.panelModel-chart .panelBody .card.card-chart.current-item {
+    border: 1px solid #FF6600;
+}
+
+.panelModel-chart .panelBody .card.card-chart.initChart{
+    background-image: url('../img/map/bg原场景效果.png');
+    background-size: 100%;
+}
+.floatingicon{
+    position: absolute;
+    left:-1px;
+    top: -1px;
+    width: 96px;
+    height: 54px;
+    background: rgba(255,255,255,0.6);
+    display: none;
+}
+.floatingicon .btnxg{
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    margin-top: 15px;
+    background-color: rgb(56,199,244);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.floatingicon .btnxg .item-apply{
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    margin-top: 15px;
+    background-image: url(/guide/image/selectChart.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: relative;
+    top: 4px;;
+}
+.floatingicon .btnxg .item-apply.selectedTemp{
+    background-image: url(/guide/image/selectedChart.png);
+}
+.panelModel-chart .panelHeader:hover {
+    cursor: move;
+}
+ .panelModel-chart .panelHeader:hover {
+    cursor: move;
+ }
+ .panelModel-chart .card.chartli.card-chart.disableMask {
+    cursor:not-allowed;
+    opacity: 0.6;
+}
+ @keyframes pat {
+    0% {opacity: 0;
+    transform: scale(1.2, 1.2);
+    } 100% {
+    opacity: 1;
+    transform: scale(1, 1);
+    }
+}

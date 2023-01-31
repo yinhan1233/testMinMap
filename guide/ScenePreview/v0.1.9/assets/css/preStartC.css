@@ -1,0 +1,330 @@
+.pre-setting-starthtml .pre-start-html{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background-color: #d6e0eb;
+    /* background: url('/uploads/wechat/5p2c5ZWf6L6J/file/雷神山医院/background.png'); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+.pre-setting-starthtml .pre-contant1{
+    width: 39%;
+    height: 100%;
+    margin: 0 auto;
+}
+.pre-start-percentage{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    transform: translate(-50%);
+}
+/* .pre-setting-starthtml .pre-contant1 .pre-progress-title{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    color: #fff;
+    z-index: 9999 !important;
+    bottom:15%;
+} */
+.pre-setting-starthtml .pre-contant1 .pre-progress-img {
+    width: 38%;
+    position: absolute;
+    height: 6px;
+    bottom: 12.4%;
+    padding: 0 6%;
+    z-index: 11;
+}
+.pre-setting-starthtml .pre-contant1 .pre-progress-img .pre-progress {
+    width: 100%;
+    height: 100%; 
+    background-color: #b0c69b  ;
+}
+.pre-setting-starthtml .pre-contant1 .pre-progress-bar {
+    position: absolute;
+    height: 15px;
+    bottom: 11%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 38%;
+    padding: 0 5%;
+    z-index: 11;
+}
+.pre-setting-starthtml .pre-contant1 .pre-progress-bar .pre-progressbg {
+    width: 100%;
+    height: 100%;  
+}
+/* .pre-setting-starthtml .pre-contant1 .pre-progress-bar .pre-building {
+     width:23px;
+    height:26px;
+    position:absolute;
+    right:-237px;
+    top:0px;
+    background: url(
+'/uploads/wechat/138942/file/启动动画/building.png'
+);
+    background-size:100% 100%;
+} */
+.pre-setting-starthtml .pre-contant1 .pre-my_content {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    color: #fff;
+    z-index: 9999!important;
+    bottom: 6%;
+}
+
+/* #start-html {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background: url('/uploads/wechat/5qmY5a2Q6YWx/file/疫情封面demo/背景1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+ #contant1 {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+} 
+#progress-img {
+    width: 38%;
+    position: absolute;
+    height: 6px;
+    bottom: 12.4%;
+    padding: 0 6%;
+    z-index: 11;
+
+}
+#progress {
+    width: 5%;
+    height: 100%;
+}
+#progress-bar {
+    position: absolute;
+    height: 15px;
+    bottom: 11%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 40%;
+    padding: 0 5%;
+    z-index: 11;
+   
+}
+#progressbg {
+    width: 100%;
+    height: 100%;
+}
+#my_content {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    color: #fff;
+    z-index: 9999!important;
+    bottom: 6%;
+}*/
+
+
+
+@media only screen and (max-width: 1440px) {
+
+}
+@media only screen and (max-width: 1745px) {
+    
+}
+@media only screen and (max-width: 1536px) {
+    
+}
+@media only screen and (max-width: 1440px) {
+    
+}
+@media only screen and (max-width: 1280px) {
+
+}
+@media only screen and (max-width: 1024px) {
+    
+}
+/* @media only screen and (max-width: 800px) {
+    .pre-setting-starthtml .pre-progress-img, 
+    .pre-setting-starthtml .pre-contant1 {
+     font-size: 14px;
+    }
+   .pre-setting-starthtml .pre-contant1 {
+        width: 90%;
+    }
+    .pre-setting-starthtml .pre-contant1 .pre-progress-img {
+        width: 78%;
+        bottom: 13.1%;
+    }
+    .pre-setting-starthtml .pre-contant1 .pre-progress-bar {
+        width: 80%;
+    }
+    .pre-setting-starthtml .pre-contant1 .pre-my_content {
+        width: 90%;
+    }
+    .pre-setting-starthtml {
+        background: url('/uploads/wechat/5qmY5a2Q6YWx/file/疫情封面demo/背景.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+} */
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 600px) {
+    
+}
+@media only screen and (max-width: 480px) {
+    
+}
+@media only screen and (max-width: 460px) {
+    
+}
+@media only screen and (max-width: 414px) {
+
+}
+@media only screen and (max-width: 412px) {
+    
+}
+@media only screen and (max-width: 411px) {
+    
+}
+@media only screen and (max-width: 384px) {
+    
+}
+@media only screen and (max-width: 375px) {
+
+}
+@media only screen and (max-width: 360px) {
+    
+}
+@media only screen and (max-width: 320px) {
+    
+}
+
+/* @media (min-height: 768px){ 
+    #start-html {
+       position:absolute;
+       left:0;
+       top:0;
+       z-index:10000;
+   
+    }
+    #background-img {
+        width:100%;
+        position: relative;
+        top:0px;
+    }
+    #progress-img {
+       position: absolute;
+       height: 6px;
+       bottom: 58px;
+       padding-left: 122px;
+       padding-right: 122px;
+    }
+    #progress {
+        width:0%;
+        height:100%;
+    }
+    #progress-bar {
+        position: absolute;
+        height: 20px;
+        bottom: 40px;
+        padding-left: 122px;
+        padding-right: 122px;
+        opacity:0;
+    }
+    #progressbg {
+         width:0%;
+        height:100%;
+    }
+}
+@media (min-height: 992px){
+       #start-html {
+       position:absolute;
+       left:0;
+       top:0;
+       z-index:10000;
+   
+    }
+    #background-img {
+        width:100%;
+        position: relative;
+        top:0px;
+    }
+    #progress-img {
+       position: absolute;
+       height: 6px;
+       bottom: 58px;
+       padding-left: 156px;
+       padding-right: 156px;
+    }
+    #progress {
+        width:0%;
+        height:100%;
+    }
+    #progress-bar {
+        position: absolute;
+        height: 20px;
+        bottom: 40px;
+        padding-left: 122px;
+        padding-right: 122px;
+        opacity:0;
+    }
+    #progressbg {
+         width:0%;
+        height:100%;
+    }
+}
+@media (min-height: 1200px){
+        #start-html {
+       position:absolute;
+       left:0;
+       top:0;
+       z-index:10000;
+   
+    }
+    #background-img {
+        width:100%;
+        position: relative;
+        top:0px;
+    }
+    #progress-img {
+       position: absolute;
+       height: 6px;
+       bottom: 58px;
+       padding-left: 156px;
+       padding-right: 156px;
+    }
+    #progress {
+        width:0%;
+        height:100%;
+    }
+    #progress-bar {
+        position: absolute;
+        height: 20px;
+        bottom: 40px;
+        padding-left: 122px;
+        padding-right: 122px;
+        opacity:0;
+    }
+    #progressbg {
+         width:0%;
+        height:100%;
+    }
+}*/

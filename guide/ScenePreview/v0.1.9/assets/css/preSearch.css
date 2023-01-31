@@ -1,0 +1,44 @@
+.pre-search-panel {
+	position: absolute;
+	left: 10px;
+    top: 10px;
+    width: 180px;
+	z-index: 115;
+}
+.pre-search-panel .search-box{
+    color: #000;
+    text-align: right;
+    position: relative;
+    padding: 0 6px;
+    line-height: 25px;
+    background: #1c1f20;
+    border-radius: 2px;
+    border: 1px solid #4d5153;
+    height: 28px;
+    font-size: 12px;
+}
+.pre-search-panel .search-box input {
+    width: 100%;
+    text-indent: 18px;
+    background: #fff;
+    color: #000;
+    line-height: 16px;
+    font-size: 12px;
+    background: none;
+    color: #ccc;
+    border: none;
+    outline: none;
+}
+
+.pre-search-panel .search-box .span1 {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    background: url(../img/preset/search1.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    cursor: pointer;
+}

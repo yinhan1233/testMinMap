@@ -1,0 +1,86 @@
+
+#pre-func-bar{
+    position: absolute;
+    top:10px;
+    width: 350px;
+}
+.layout-layout-right{
+    left: 0px!important;
+}
+/* :before {
+    color: #393D49;
+} */
+.icon-baocun:before, .icon-start:before, .icon-effect3:before, .icon-qita:before, .icon-infolist:before {
+    color: #393D49; 
+}
+.layui-nav {
+    background-color: #f6f7f9!important;
+}
+/* .layui-nav .layui-nav-more{
+    border-top-color: #666;
+} */
+/* .layui-nav * {
+    font-size: 20px;
+} */
+.kjg:hover .layui-nav-child{
+    display: block;
+}
+.kjg:hover .layui-nav-child .layui-nav-child {
+    display: none;
+}
+.kjg .layui-nav-child {
+    display: none;
+}
+
+.dp:hover  .layui-nav-child{
+    display: block;
+}
+.dp:hover .layui-nav-child .layui-nav-child {
+    display: none;
+}
+.dp .layui-nav-child {
+    display: none;
+}
+
+.bc:hover .layui-nav-bar {
+    left: 0px;
+    height: 2px;
+    top:1px;
+    width: 60px;
+    opacity: 1;
+    background-color: #20222A!important;
+}
+
+
+.qd:hover .layui-nav-bar {
+    left: 0px;
+    height: 2px;
+    opacity: 1;
+    top:1px;
+    width: 60px;
+    background-color: #20222A!important;
+}
+.cj:hover .layui-nav-bar {
+    left: 0px;
+    height: 2px;
+    opacity: 1;
+    top:1px;
+    width: 60px;
+    background-color: #20222A!important;
+}
+.kjg:hover .layui-nav-bar {
+    left: 0px;
+    height: 2px;
+    opacity: 1;
+    top:1px;
+    width: 60px;
+    background-color: #20222A!important; 
+}
+.dp:hover .layui-nav-bar {
+    left: 0px;
+    height: 2px;
+    opacity: 1;
+    width: 60px;
+    top:1px;
+    background-color: #20222A!important; 
+}
