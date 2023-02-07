@@ -1,0 +1,111 @@
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    font-family: '青春体';
+  }
+
+  @font-face {
+    font-family: 'ds-digitalbold_italic';
+    src: url('./fonts/ds-digit-webfont.eot');
+    src: url('./fonts/ds-digit-webfont.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/ds-digit-webfont.woff2') format('woff2'),
+      url('./fonts/ds-digit-webfont.woff') format('woff'),
+      url('./fonts/ds-digit-webfont.svg#ds-digitalbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'Almendra SC';
+    src: url('./fonts/almendra-sc-v23-latin-regular.eot');
+    src: url('./fonts/almendra-sc-v23-latin-regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/almendra-sc-v23-latin-regular.woff2') format('woff2'),
+      url('./fonts/almendra-sc-v23-latin-regular.woff') format('woff'),
+      url('./fonts/almendra-sc-v23-latin-regular.ttf') format('truetype'),
+      url('./fonts/almendra-sc-v23-latin-regular.svg#AlmendraSC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'LiuJianMaoCao-Regular';
+    src: url('./fonts/LiuJianMaoCao-Regular.eot');
+    src: url('./fonts/LiuJianMaoCao-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/LiuJianMaoCao-Regular.woff2') format('woff2'),
+      url('./fonts/LiuJianMaoCao-Regular.woff') format('woff'),
+      url('./fonts/LiuJianMaoCao-Regular.ttf') format('truetype'),
+      url('./fonts/LiuJianMaoCao-Regular.svg#LiuJianMaoCao-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'DIN Alternate Bold';
+    src: url('./fonts/DIN Alternate Bold.eot');
+    src: url('./fonts/DIN Alternate Bold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/DIN Alternate Bold.woff2') format('woff2'),
+      url('./fonts/DIN Alternate Bold.woff') format('woff'),
+      url('./fonts/DIN Alternate Bold.ttf') format('truetype'),
+      url('./fonts/DIN Alternate Bold.svg#LiuJianMaoCao-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'Cramaten';
+    src: url('./fonts/Cramaten.eot');
+    src: url('./fonts/Cramaten.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Cramaten.woff2') format('woff2'),
+      url('./fonts/Cramaten.woff') format('woff'),
+      url('./fonts/Cramaten.ttf') format('truetype'),
+      url('./fonts/Cramaten.svg#LiuJianMaoCao-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: '青春体';
+    src: url('./fonts/youngfonts.eot');
+    src: url('./fonts/youngfonts.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/youngfonts.woff2') format('woff2'),
+      url('./fonts/youngfonts.woff') format('woff'),
+      url('./fonts/youngfonts.svg#REEJI-BigYoung-MediumGB2.0-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: '思源黑体';
+    src: url('./fonts/SourceHanSansCN-Regular.eot');
+    src: url('./fonts/SourceHanSansCN-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/SourceHanSansCN-Regular.woff2') format('woff2'),
+      url('./fonts/SourceHanSansCN-Regular.woff') format('woff'),
+      url('./fonts/SourceHanSansCN-Regular.svg#SourceHanSansCN-Regular-Alphabetic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Electrolize-Regular';
+    src: url('./fonts/Electrolize-Regular.eot');
+    src: url('./fonts/Electrolize-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Electrolize-Regular.woff2') format('woff2'),
+      url('./fonts/Electrolize-Regular.woff') format('woff'),
+      url('./fonts/Electrolize-Regular.svg#Electrolize-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  input[type=file] {
+    display: none !important;
+  }

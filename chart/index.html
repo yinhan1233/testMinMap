@@ -1,0 +1,124 @@
+<!DOCTYPE html><html oncontextmenu="return false;"><head><meta charset=utf-8><link rel="shortcut icon" href=/chart/static/img/logo.ico><link rel=stylesheet href=/chart/static/vue2-animate.min.css><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name=viewport><link rel=stylesheet href=/chart/static/admin-lte/css/datepicker.css><link rel=stylesheet href=/chart/static/admin-lte/css/AdminLTE.css><link rel=stylesheet href=/chart/static/admin-lte/css/ionicons.min.css><link rel=stylesheet href=/chart/static/admin-lte/css/_all-skins.min.css><title>ThingJS QuickChart</title><script src=/chart/static/conf.js></script><script src=/chart/static/clipboard.min.js></script><script src=/chart/static/componentpropdata/PropConfig.js></script><script src=/chart/static/componentpropdata/ComponentTemplate.js></script><script src=/chart/static/echarts410.js></script><script src=/chart/static/echarts-liquidfill4echarts4.js></script><script src=/chart/static/echarts-gl110.js></script><script src=/chart/static/echarts-wordcloud.min.js></script><script src=/chart/static/highcharts.js></script><script src=/chart/static/highcharts-more.js></script><script src=/chart/static/exporting.js></script><script src=/chart/static/wordcloud.js></script><script src=/chart/static/xrange.js></script><script src=/chart/static/oldie.js></script><script src=/chart/static/solid-gauge.js></script><script src=/chart/static/highcharts-3d.js></script><script src=/chart/static/macarons.js></script><script src=/chart/static/map/china.js></script><script src=/chart/static/map/world.js></script><script src=/chart/static/jquery.min.js></script><script src=/chart/static/html2canvas.js></script><script src=/chart/static/TweenMax.min.js></script><script src=/chart/static/Tween.js></script><style type=text/css>body {
+      overflow-y: auto;
+      overflow-x: hidden;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -khtml-user-select: none;
+      user-select: none;
+      font-family: '青春体';
+    }
+
+    @font-face {
+      font-family: 'ds-digitalbold_italic';
+      src: url('/chart/static/fonts/ds-digit-webfont.eot');
+      src: url('/chart/static/fonts/ds-digit-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/chart/static/fonts/ds-digit-webfont.woff2') format('woff2'),
+        url('/chart/static/fonts/ds-digit-webfont.woff') format('woff'),
+        url('/chart/static/fonts/ds-digit-webfont.svg#ds-digitalbold_italic') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+    @font-face {
+      font-family: 'Almendra SC';
+      src: url('/chart/static/fonts/almendra-sc-v23-latin-regular.eot');
+      src: url('/chart/static/fonts/almendra-sc-v23-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('/chart/static/fonts/almendra-sc-v23-latin-regular.woff2') format('woff2'),
+        url('/chart/static/fonts/almendra-sc-v23-latin-regular.woff') format('woff'),
+        url('/chart/static/fonts/almendra-sc-v23-latin-regular.ttf') format('truetype'),
+        url('/chart/static/fonts/almendra-sc-v23-latin-regular.svg#AlmendraSC') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+    @font-face {
+      font-family: 'LiuJianMaoCao-Regular';
+      src: url('/chart/static/fonts/LiuJianMaoCao-Regular.eot');
+      src: url('/chart/static/fonts/LiuJianMaoCao-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/chart/static/fonts/LiuJianMaoCao-Regular.woff2') format('woff2'),
+        url('/chart/static/fonts/LiuJianMaoCao-Regular.woff') format('woff'),
+        url('/chart/static/fonts/LiuJianMaoCao-Regular.ttf') format('truetype'),
+        url('/chart/static/fonts/LiuJianMaoCao-Regular.svg#LiuJianMaoCao-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+    @font-face {
+      font-family: 'DIN Alternate Bold';
+      src: url('/chart/static/fonts/DIN Alternate Bold.eot');
+      src: url('/chart/static/fonts/DIN Alternate Bold.eot?#iefix') format('embedded-opentype'),
+        url('/chart/static/fonts/DIN Alternate Bold.woff2') format('woff2'),
+        url('/chart/static/fonts/DIN Alternate Bold.woff') format('woff'),
+        url('/chart/static/fonts/DIN Alternate Bold.ttf') format('truetype'),
+        url('/chart/static/fonts/DIN Alternate Bold.svg#LiuJianMaoCao-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+    @font-face {
+      font-family: 'Cramaten';
+      src: url('/chart/static/fonts/Cramaten.eot');
+      src: url('/chart/static/fonts/Cramaten.eot?#iefix') format('embedded-opentype'),
+        url('/chart/static/fonts/Cramaten.woff2') format('woff2'),
+        url('/chart/static/fonts/Cramaten.woff') format('woff'),
+        url('/chart/static/fonts/Cramaten.ttf') format('truetype'),
+        url('/chart/static/fonts/Cramaten.svg#LiuJianMaoCao-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+    @font-face {
+      font-family: '青春体';
+      src: url('/chart/static/fonts/youngfonts.eot');
+      src: url('/chart/static/fonts/youngfonts.eot?#iefix') format('embedded-opentype'),
+        url('/chart/static/fonts/youngfonts.woff2') format('woff2'),
+        url('/chart/static/fonts/youngfonts.woff') format('woff'),
+        url('/chart/static/fonts/youngfonts.svg#REEJI-BigYoung-MediumGB2.0-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: '思源黑体';
+      src: url('/chart/static/fonts/SourceHanSansCN-Regular.eot');
+      src: url('/chart/static/fonts/SourceHanSansCN-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/chart/static/fonts/SourceHanSansCN-Regular.woff2') format('woff2'),
+        url('/chart/static/fonts/SourceHanSansCN-Regular.woff') format('woff'),
+        url('/chart/static/fonts/SourceHanSansCN-Regular.svg#SourceHanSansCN-Regular-Alphabetic') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Electrolize-Regular';
+      src: url('/chart/static/fonts/Electrolize-Regular.eot');
+      src: url('/chart/static/fonts/Electrolize-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/chart/static/fonts/Electrolize-Regular.woff2') format('woff2'),
+        url('/chart/static/fonts/Electrolize-Regular.woff') format('woff'),
+        url('/chart/static/fonts/Electrolize-Regular.svg#Electrolize-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    input[type=file] {
+      display: none !important;
+    }</style><link href=/chart/static/css/app.219c7069197ff727f61fe790fcb959f7.css rel=stylesheet></head><body class="skin-blue sidebar-mini" style="padding: 0;margin: 0"><div id=app></div><script src=/chart/static/admin-lte/js/bootstrap.min.js></script><script src=/chart/static/admin-lte/js/jquery.slimscroll.min.js></script><script src=/chart/static/admin-lte/js/datepicker.js></script><script src=/chart/static/admin-lte/js/adminlte.min.js></script><script type=text/javascript src=/chart/static/js/manifest.413152355939e393d26b.js></script><script type=text/javascript src=/chart/static/js/vendor.b1ec25d4a285c3e34e5e.js></script><script type=text/javascript src=/chart/static/js/app.07fd542c678ff2df34aa.js></script></body><script>function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg); //匹配目标参数
+    if (r != null) return unescape(r[2]);
+    return null; //返回参数值
+  }
+  let mode = getUrlParam('mode')
+  if (mode && mode === 'clear') {
+    $('body').css("background-color", "transparent")
+    $('body').css("background-image", "none")
+  } else {
+    $('body').css("background-color", "#eeeeee")
+    $('body').css("background-image", "none")
+  }</script></html>
