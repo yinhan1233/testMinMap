@@ -28,10 +28,10 @@ var app = new THING.App({ resourceLibraryUrl: "./",
  app.background = [0, 0, 0];
  // 引用地图组件脚本
  THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
-     let defaultPath = '/Resources/CityMap/admin/131982';
+     let defaultPath = '/Resources/CityMap/admin/43933';
      app.create({
        type: 'Map',
-       // 地图场景名：mapTest
+       // 地图场景名：西城区基础图层
        url: defaultPath + '/map.bundle.json',
        // url: "./cityBuilder/1/map.bundle.json",
        resourceConfig : {
@@ -42,6 +42,7 @@ var app = new THING.App({ resourceLibraryUrl: "./",
        }
    });
  });
+
 
 
 
