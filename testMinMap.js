@@ -1,8 +1,8 @@
 
 // 加载场景代码 
-var app = new THING.App({ resourceLibraryUrl: "./", 
-   url: './scene/1/'
-});
+// var app = new THING.App({ resourceLibraryUrl: "./", 
+//    url: './scene/1/'
+// });
 
 
 // // 引入一键图表脚本
