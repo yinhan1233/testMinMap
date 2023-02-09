@@ -1,0 +1,153 @@
+#pre-chartlet-list{
+    position: absolute;
+    left: calc(100% - 340px);
+    top: 10px;
+  }
+  .pre-setting-panel .pre-panelModel .pre-panelBody .pre-params-setting-lists{
+    overflow: visible;
+  }
+
+  .pre-setting-panel .pre-panelModel .pre-panelHeader .pre-chartlet-panelNumber{
+    color: #c6c6c6;
+      font-size: 12px;
+      cursor: default;
+    }
+
+  .pre-setting-panel .pre-panelModel .pre-panelBody .card{
+    width: 96px;
+    height: 54px;
+    text-align: center;
+    top: 11px;
+    margin-left: 3.2px;
+    display: inline-block;
+    margin-bottom: 13px;
+    transition: box-shadow .2s ease;
+    position: relative;
+    background: #3d3f40;
+    border-radius: 2px;
+    animation: pat .8s 1;
+    cursor: pointer;
+    }
+    @keyframes pat
+    {
+    0% {opacity: 0;
+      transform: scale(1.2, 1.2);
+    } 100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+    }
+    
+    .pre-setting-panel .pre-panelModel .pre-panelBody .card span.PER_TIP{
+    background-image: url(../../../../image/icon_per.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    }
+
+    .pre-setting-panel .pre-panelModel .pre-panelBody .card:hover{
+      box-shadow: 0 1px 1px rgba(97, 108, 121, 0.3), 0 7px 18px 0 rgba(97, 108, 121, 0.4);
+    }
+    .pre-setting-panel .pre-panelModel .pre-panelBody .card .card-body{
+      font-size: 12px;
+      display: none;
+      position: absolute;
+      bottom: -14px;
+      width: auto;
+      height: 22px;
+      background: #000000;
+      border-radius: 2px;
+      opacity: 0.6976;
+      font-size: 12px;
+      padding: 0 3px;
+      left: calc(100% - 33px);
+      z-index: 2;
+      overflow: hidden;
+      /* text-overflow: ellipsis;
+      white-space: nowrap; */
+    }
+    .pre-setting-panel .pre-panelModel .pre-panelBody .card .card-body p{
+      overflow: hidden;
+      margin-top: 2px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .pre-setting-panel .pre-panelModel .pre-panelBody .card:hover .card-body{
+      display: block;
+    }
+    
+    .pre-setting-panel .pre-panelModel .pre-panelBody .scene-boxs .card a img{
+       /* height: 99%;
+        width: 99%; */
+      border-radius: 2px;
+      display: flex;
+      text-align: center;
+    }
+    
+    .pre-chartlet-card{
+      width: 96px;
+      height: 54px;
+      text-align: center;
+      top: -10px;
+      margin-left: 1.2px;
+      left: 4.2px;
+      display: inline-block;
+      margin-bottom: 0px;
+      transition: box-shadow .2s ease;
+      position: relative;
+      background: #3d3f40;
+      border-radius: 2px;
+      animation: pat .8s 1;
+      cursor: pointer;
+    }
+    .pre-setting-panel .pre-panelModel .pre-panelBody .pre-chartlet-card:hover{
+      box-shadow: 0 1px 1px rgba(97, 108, 121, 0.3), 0 7px 18px 0 rgba(97, 108, 121, 0.4);
+    }
+    .pre-chartlet-card  a .card-img-top{
+      border-radius: 2px
+    }
+
+    .pre-chartlet-card  a .card-img-top .newFile{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      text-align: center;
+    }
+
+    .pre-chartlet-card  a .card-img-top .add{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .pre-chartlet-card  a .card-img-top .add i{
+      /* left: 38px; */
+      margin: auto;
+      background: #999999;
+      display: inline-block;
+      height: 20px;
+      position: relative;
+      width: 2px;
+      top: -5px;
+    }
+    .pre-chartlet-card  a .card-img-top .add i::after{
+      background: #999999;
+      content: "";
+      height: 20px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 2px;
+      transform: rotateZ(90deg);
+    }
+    .pre-chartlet-card  a .card-img-top .add label{
+      display: block;
+      margin: 1px auto;
+      color: #999999;
+      width: auto;
+      font-size: 12px !important;
+    }
+

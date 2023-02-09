@@ -1,0 +1,199 @@
+.playpanelin {
+    height: 30px;
+    width: auto;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+.playpanelin .fl {
+    float: left;
+    margin-left: 14px;
+    height: 100%;
+}
+#viewAniName {
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-top: 4px;
+}
+.playpanelin .progress {
+    line-height: 30px;
+    margin-top: 13px;
+    height: 2px;
+    background: #0a1938;
+    border-radius: 2px;
+}
+
+.playpanelin .progress .innerclass {
+    background: rgb(168,170,180);
+    height: 2px;
+    border-radius: 2px;
+}
+
+.playpanelin .progress .innerclass .innerball {
+    background: rgb(168,170,180);
+    height: 8px;
+    width: 8px;
+    float: right;
+    border-radius: 50%;
+    margin: -3px -5px;
+}
+
+.playpanelin .buttonmode {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+img{
+    width: 25px;
+    cursor: pointer;
+}
+.tooltiptext{
+    visibility: hidden;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 117%;
+    left: 50%;
+    margin-left: 0%;
+    width: auto;
+    padding: 5px 10px;
+    font-family: Open Sans,sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #fff;
+    text-transform: none;
+    background: rgba(0, 0, 0, 0.75);
+    transition: opacity .25s ease-in-out;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+.tooltiptext:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.buttonmode:hover .tooltiptext{
+    visibility: visible;
+    pointer-events: none;
+    z-index: 1000;
+}
+#moreBtn img{
+    width: 23px;
+}
+.more-pane {
+    position: absolute;
+    bottom:32px;
+    display: none;
+    background-color: rgba(0,0,0,.75);
+    width: 130px;
+    height: 70px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #cccccc;
+    right: 1px;
+    animation: more-pane-anim .25s linear;
+}
+.morepane {
+    cursor: pointer;
+    pointer-events: auto;
+    line-height: 28px;
+    height: 50%;
+    opacity: 0;
+    transiton: opacity 0.75s;
+}
+.morepane:hover {
+        background:#333;
+}
+.morepane img {
+    padding-left:2px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 22px;
+}
+.morepane span {
+    padding-left: 40px;
+    top: 39px;
+    position: absolute;
+}
+.pic-in-pic:after {
+    content: '';
+    position: absolute;
+    top: calc(56% - 4px);
+    left: 0%;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(125, 125, 125);
+}
+@keyframes more-pane-anim {
+    from { 
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 130px;
+        height: 70px;
+    }
+}
+
+.setting-list-title {
+    padding-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+.setting-list-title:after {
+    content: '';
+    position: absolute;
+    /* top: calc(12% - 4px); */
+    top: 36px;
+    left: -2%;
+    height: 1px;
+    width: 104%;
+    background-color: rgb(125, 125, 125);
+}
+
+.play-setting {
+    margin-top: 8px;
+}
+.show-more:after {
+   padding-left: 6px;
+    font-family: FontAwesome;
+    content: "\f101";
+}
+.all-viewAni {
+    left: -53%;
+    opacity: 0;
+    margin-bottom: -80px;
+}
+.show-more:hover .all-viewAni {
+    pointer-events: auto;
+    opacity: 1;
+    transition: opacity .3s, margin-left 0s;
+}
+.show-more:hover .all-viewAni .all-viewAni {
+     opacity: 0;
+     transition: opacity .3s, margin-left 0s;
+}
+#viewAni .control-menu .control-menu-wrapper .control-menu-pane .setting-list .play-setting:after{
+    content: '';
+    position: absolute;
+    top: calc(0% - 4px);
+    left: -2%;
+    height: 1px;
+    width: 104%;
+    background-color: rgb(125, 125, 125);
+}
