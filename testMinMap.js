@@ -1,61 +1,4 @@
-
-// // 加载场景代码 
-// var app = new THING.App({ resourceLibraryUrl: "./", 
-//    url: './scene/1/'
-// });
-// // 创建Thing
-// var obj = app.create({
-//     type: 'Thing',
-//     name: '北京CBD_北京SKP_G', 
-//     url:'/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763',
-//     position: [0, 0, 0],
-//     angle: 0,
-//     complete: function () {
-//         console.log('thing created: ' + this.id);
-//     }
-// });
-
-//  // 加载地图
-//  var app = new THING.App();
-//  // 设置app背景为黑色
-//  app.background = [0, 0, 0];
-//  // 引用地图组件脚本
-//  THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
-//      let defaultPath = '/Resources/CityMap/admin/43933';
-//      app.create({
-//        type: 'Map',
-//        // 地图场景名：西城区基础图层
-//        url: defaultPath + '/map.bundle.json',
-//        // url: "./cityBuilder/1/map.bundle.json",
-//        resourceConfig : {
-//            resourcePrefix: defaultPath
-//        },
-//        complete: function (event) {
-//            console.log(event.object.userLayers.length);
-//        }
-//    });
-//  });
-//  // 加载地图
-//           var app = new THING.App();
-//           // 设置app背景为黑色
-//           app.background = [0, 0, 0];
-//           // 引用地图组件脚本
-//           THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
-//               let defaultPath = '/Resources/CityMap/admin/1043850';
-//               app.create({
-//                 type: 'Map',
-//                 // 地图场景名：路北区
-//                 url: defaultPath + '/map.bundle.json',
-//                 // url: "./cityBuilder/1/map.bundle.json",
-//                 resourceConfig : {
-//                     resourcePrefix: defaultPath
-//                 },
-//                 complete: function (event) {
-//                     console.log(event.object.userLayers.length);
-//                 }
-//             });
-//           });
-        
+     
  // 加载地图
  var app = new THING.App();
  // 设置app背景为黑色
@@ -67,7 +10,6 @@
        type: 'Map',
        // 地图场景名：马尔康市
        url: defaultPath + '/map.bundle.json',
-       // url: "./cityBuilder/1/map.bundle.json",
        resourceConfig : {
            resourcePrefix: defaultPath
        },
@@ -76,7 +18,22 @@
        }
    });
  });
-
+// 离线开发引入森大屏图表脚本
+THING.Utils.dynamicLoad(['/static/release/thingjs-charts.umd.js'],
+async function () {
+    const scenebundle = THING.CHARTS.Utils.loadBundle(
+        '/Resources/BigScreen/admin/178eb10990544ac6abe00388209c143e', // 前缀
+        {
+            container: document.querySelector('#div2d'), // 挂载节点
+            hide3D: true, // 隐藏场景内的3D，默认为false
+            hideCanvasBackground: true, // 画布背景色是否设置为透明的，默认false
+            //id: 178eb10990544ac6abe00388209c143e, //默认走bundle下的main，main不存在读id
+        }
+    )
+    await scenebundle.waitForComplete() // 等待场景加载完成
+    scenebundle.ui // ui实例
+}
+)
         
 
 
