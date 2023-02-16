@@ -57,25 +57,26 @@
 //           });
         
  // 加载地图
-          var app = new THING.App();
-          // 设置app背景为黑色
-          app.background = [0, 0, 0];
-          // 引用地图组件脚本
-          THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
-              let defaultPath = '/Resources/CityMap/admin/1059084';
-              app.create({
-                type: 'Map',
-                // 地图场景名：城市
-                url: defaultPath + '/map.bundle.json',
-                // url: "./cityBuilder/1/map.bundle.json",
-                resourceConfig : {
-                    resourcePrefix: defaultPath
-                },
-                complete: function (event) {
-                    console.log(event.object.userLayers.length);
-                }
-            });
-          });
+ var app = new THING.App();
+ // 设置app背景为黑色
+ app.background = [0, 0, 0];
+ // 引用地图组件脚本
+ THING.Utils.dynamicLoad(['/source/uearth.min.js'], function () {
+     let defaultPath = '/Resources/CityMap/admin/1075716';
+     app.create({
+       type: 'Map',
+       // 地图场景名：马尔康市
+       url: defaultPath + '/map.bundle.json',
+       // url: "./cityBuilder/1/map.bundle.json",
+       resourceConfig : {
+           resourcePrefix: defaultPath
+       },
+       complete: function (event) {
+           console.log(event.object.userLayers.length);
+       }
+   });
+ });
+
         
 
 
