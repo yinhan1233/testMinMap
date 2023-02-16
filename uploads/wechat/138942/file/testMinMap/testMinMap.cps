@@ -41,6 +41,6 @@
     // 举例：项目中引用了单资源城市 "/Resources/CityMap/admin/43933"，
     //      为能正确打包该引用模型，需配置如下：
      "maps": [
-         "/Resources/CityMap/admin/1075716"
+         "/Resources/CityMap/admin/1059084"
       ]
 }
