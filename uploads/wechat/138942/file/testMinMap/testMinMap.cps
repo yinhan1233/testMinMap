@@ -31,7 +31,7 @@
     // 举例：项目中引用了单资源森大屏 "/Resources/BigScreen/admin/178eb10990544ac6abe00388209c143e"，
     //      为能正确打包该引用模型，需配置如下：
      "dshs": [
-         "/Resources/BigScreen/admin/178eb10990544ac6abe00388209c143e"
+         "/Resources/BigScreen/admin/9a32fc758a44499d94a955680b30e369"
       ],
     // 举例：项目中引用了单资源森图表 "/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a"，
     //      为能正确打包该引用模型，需配置如下：

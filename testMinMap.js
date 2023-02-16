@@ -22,12 +22,12 @@
 THING.Utils.dynamicLoad(['/static/release/thingjs-charts.umd.js'],
 async function () {
     const scenebundle = THING.CHARTS.Utils.loadBundle(
-        '/Resources/BigScreen/admin/178eb10990544ac6abe00388209c143e', // 前缀
+        '/Resources/BigScreen/admin/9a32fc758a44499d94a955680b30e369', // 前缀
         {
             container: document.querySelector('#div2d'), // 挂载节点
             hide3D: true, // 隐藏场景内的3D，默认为false
             hideCanvasBackground: true, // 画布背景色是否设置为透明的，默认false
-            //id: 178eb10990544ac6abe00388209c143e, //默认走bundle下的main，main不存在读id
+            //id: 9a32fc758a44499d94a955680b30e369, //默认走bundle下的main，main不存在读id
         }
     )
     await scenebundle.waitForComplete() // 等待场景加载完成
