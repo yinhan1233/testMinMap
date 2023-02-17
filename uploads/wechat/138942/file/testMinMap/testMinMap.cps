@@ -20,9 +20,9 @@
     //  ],
     // 举例：项目中引用了单资源模型 "/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763"，
     //      为能正确打包该引用模型，需配置如下：
-    //"glt": [
-    //  "/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763"
-    //]
+    "glts": [
+      "/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763"
+    ]
     // 举例：项目中引用了单资源QChart "/api/chart/638ede8aee63ce091cc770ca"，
     //      为能正确打包该引用模型，需配置如下：
     // "qct": [
@@ -35,9 +35,9 @@
       ],
     // 举例：项目中引用了单资源森图表 "/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a"，
     //      为能正确打包该引用模型，需配置如下：
-    // "cht": [
-    //     "/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a"
-    //  ],
+     "chts": [
+         "/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a"
+      ],
     // 举例：项目中引用了单资源城市 "/Resources/CityMap/admin/43933"，
     //      为能正确打包该引用模型，需配置如下：
      "maps": [

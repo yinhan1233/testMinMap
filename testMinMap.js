@@ -35,6 +35,44 @@ async function () {
     scenebundle.ui // ui实例
 }
 )
+// 离线开发引入森图表脚本
+THING.Utils.dynamicLoad([
+    '/static/plugins/compile.js',
+    '/static/plugins/vue.min.js',
+    '/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a/f5e187be77074a22833becd4e3492d8a.js'
+  ],
+    function () {
+        /**
+         * 园区或地图初始化完成后加载图表
+         */
+        createButton();
+        let c = new window.conch['Cf5e187be77074a22833becd4e3492d8a'](document.querySelector('#chartDom'), {
+            prefix: '/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a'
+        })
+        c.render();
+    })
+  /**
+   * 利用模板字符串 创建页面元素并添加到div2d中
+   */
+  function createButton() {
+    // 使用 bootstrap 样式
+    var template =
+        "<div id='chartDom' style='position:absolute;left:20px;top:20px;z-index:2;width:400px;height:250px;'></div>";
+    var btn = $('#div2d').append($(template));
+  return btn;
+  }
+  // 创建Thing
+  var app = new THING.App();
+  var obj = app.create({
+      type: 'Thing',
+      name: '北京CBD_北京SKP_G', 
+      url:'/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763',
+      position: [0, 0, 0],
+      angle: 0,
+      complete: function () {
+          console.log('thing created: ' + this.id);
+      }
+  });
         
 
 
