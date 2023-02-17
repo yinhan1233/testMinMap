@@ -22,7 +22,7 @@
     //      为能正确打包该引用模型，需配置如下：
     "glts": [
       "/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763"
-    ]
+    ],
     // 举例：项目中引用了单资源QChart "/api/chart/638ede8aee63ce091cc770ca"，
     //      为能正确打包该引用模型，需配置如下：
     // "qct": [
