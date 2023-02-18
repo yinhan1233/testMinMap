@@ -9,10 +9,10 @@
     // 举例：项目中引用的第一个场景URL为 "/api/scene/d370cad09e74f42d932b083d"，
     //      第二个场景URL为 "/api/scene/b422fd26d4c7874df3992068"，
     //      为能正确打包上述两个场景或单资源园区，需配置如下：
-     "scenes": [
-         "/api/scene/d370cad09e74f42d932b083d",
-         "/api/scene/b422fd26d4c7874df3992068"
-      ],
+     //"scenes": [
+     //    "/api/scene/d370cad09e74f42d932b083d",
+     //    "/api/scene/b422fd26d4c7874df3992068"
+     // ],
     // 举例：项目中动态引用了模型 "/api/models/8CF6171F7EE046968B16E10181E8D941/0/gltf/"，
     //      为能正确打包该引用模型，需配置如下：
     // "models": [
@@ -20,9 +20,9 @@
     //  ],
     // 举例：项目中引用了单资源模型 "/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763"，
     //      为能正确打包该引用模型，需配置如下：
-    "glts": [
-      "/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763"
-    ],
+    //"glts": [
+    //  "/Resources/Model/admin/447aebc08c5e4bc1a2f0d84a0747b763"
+    //],
     // 举例：项目中引用了单资源QChart "/api/chart/638ede8aee63ce091cc770ca"，
     //      为能正确打包该引用模型，需配置如下：
     // "qct": [
@@ -30,17 +30,17 @@
     //  ],
     // 举例：项目中引用了单资源森大屏 "/Resources/BigScreen/admin/178eb10990544ac6abe00388209c143e"，
     //      为能正确打包该引用模型，需配置如下：
-     "dshs": [
-         "/Resources/BigScreen/admin/9a32fc758a44499d94a955680b30e369"
-      ],
+     //"dshs": [
+     //    "/Resources/BigScreen/admin/9a32fc758a44499d94a955680b30e369"
+     // ],
     // 举例：项目中引用了单资源森图表 "/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a"，
     //      为能正确打包该引用模型，需配置如下：
-     "chts": [
-         "/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a"
-      ],
+     //"chts": [
+     //    "/Resources/senChart/admin/f5e187be77074a22833becd4e3492d8a"
+     // ],
     // 举例：项目中引用了单资源城市 "/Resources/CityMap/admin/43933"，
     //      为能正确打包该引用模型，需配置如下：
-     "maps": [
-         "/Resources/CityMap/admin/1059084"
-      ]
+     //"maps": [
+     //    "/Resources/CityMap/admin/1059084"
+     // ]
 }
