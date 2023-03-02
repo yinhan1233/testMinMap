@@ -1,0 +1,1 @@
+{"author":"443470","dependencies":{},"description":"The earth project","external":{"encrypt-files":["map.bundle.json","manifest.json","^model/[^]*(.json$|.gltf$)"],"preview":"preview.png","source-from":"citybuilder2.4.4"},"id":"1011449","main":"map.bundle.json","name":"写实主义地球","type":"map","version":"1.1.0"}
