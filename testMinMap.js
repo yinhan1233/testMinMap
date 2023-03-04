@@ -2,7 +2,7 @@
 THING.Utils.dynamicLoad(['/static/ScenePreview/chart/PreviewChartControl.js'], function () {
     // 创建图表
     new PreviewChartControl({
-        url: '/api/chart/63870ddd05108267c4a1b6df',
+        url: '/api/chart/62c39bdbee63ce05082e4a60',
         tag: '1',
         isLoad: true,  // 加载页，默认为true
         isApplyBackground: false,  // 是否应用图表背景，启用该参数会替换app.background的值，默认false
@@ -15,7 +15,3 @@ THING.Utils.dynamicLoad(['/static/ScenePreview/chart/PreviewChartControl.js'], f
         }
     });
 })
-// 离线开发引入园区场景
-var app = new THING.App({
-    url: '/api/scene/1389421669185206020'  // 场景地址
-});
