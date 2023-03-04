@@ -25,7 +25,7 @@
     // 举例：项目中引用了单资源QChart "/api/chart/638ede8aee63ce091cc770ca"，
     //      为能正确打包该引用模型，需配置如下：
      "qcts": [
-         "/api/chart/63870ddd05108267c4a1b6d"
+         "/api/chart/63870ddd05108267c4a1b6df"
       ],
     // 举例：项目中引用了单资源森大屏 "/Resources/BigScreen/admin/178eb10990544ac6abe00388209c143e"，
     //      为能正确打包该引用模型，需配置如下：
