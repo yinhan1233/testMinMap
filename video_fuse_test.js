@@ -52,7 +52,7 @@ THING.Utils.dynamicLoad(['https://uinnova-pano.oss-cn-beijing.aliyuncs.com/proje
                 width: "500px",
                 closeIcon: true
             });
-            var iframe = panel.addIframe({ url: "https://cdn.test.trydotec.com/gis-service/thingJs_demo.mp4" }, 'url').caption("").setHeight('279px');
+            var iframe = panel.addIframe({ url: "https://cdn.test.trydotec.com/gis-service/street1.mp4" }, 'url').caption("").setHeight('279px');
             panel.position = [80, 150];
             // 关闭 panel 时，移除嵌入视频的 iframe 页面
             panel.on("close", function() {
@@ -284,7 +284,8 @@ THING.Utils.dynamicLoad(['https://uinnova-pano.oss-cn-beijing.aliyuncs.com/proje
         projector01.setReceiveObjects([floor,road1,road2]);
         projector01.far = 500;
         projector01.fov = 30;
-        var video1 = getVideoElementFlv("https://sf1-hscdn-tos.pstatp.com/obj/media-fe/xgplayer_doc_video/flv/xgplayer-demo-360p.flv");
+        // var video1 = getVideoElementFlv("https://sf1-hscdn-tos.pstatp.com/obj/media-fe/xgplayer_doc_video/flv/xgplayer-demo-360p.flv");
+        var video1 =  getVideoElement("https://cdn.test.trydotec.com/gis-service/elevator.mp4");
         //设置video标签
         projector01.setVideoElement(video1);
 
