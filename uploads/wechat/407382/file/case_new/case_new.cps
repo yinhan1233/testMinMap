@@ -9,10 +9,7 @@
     // 举例：项目中引用的第一个场景URL为 "/api/scene/d370cad09e74f42d932b083d"，
     //      第二个场景URL为 "/api/scene/b422fd26d4c7874df3992068"，
     //      为能正确打包上述两个场景，需配置如下：
-    "scenes": [
-        "/api/scene/a3928b810fe75af1293dc24e",
-        "/api/scene/a011da3a34ed455d6825c039"
-    ],
+    "scenes": [],
     // THING.Utils.dynamicLoad(['https://www.thingjs.com/guide/ScenePreview/v0.1.9/AppPreview.min.js'],
     //     function () {
     //         // 在load事件中的调用示例如下所示：
