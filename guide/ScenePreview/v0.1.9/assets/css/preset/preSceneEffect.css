@@ -1,0 +1,536 @@
+
+/* 选项（灯光配置，后期设置，动态天空，雾） */
+.pre-container-pm{
+    width: 300px;
+	/* height: auto; */
+	position: relative;
+    top: -10px;
+    left:-7px;
+	z-index: 999;
+	overflow: visible;
+	border-top: none;
+	border-right: none;
+	background: #2b2d2f;
+}
+.pre-container-pm>.title {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    /* padding: 0 10px; */
+    background: none;
+    margin: 2px auto;
+    position: relative;
+    border-radius: 3px;
+    /* background-color: #eee; */
+}
+.title-name {
+    width: 75px;
+    height: 26px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    color: #ccc;
+    background-color: #494949;
+    margin-right: -3.5px;
+    font-family: MicrosoftYaHeiUI;
+    border-radius: 2px 0px 0px 2px;
+    border-right: 1px solid #222222;
+    /* border: 1px solid #eee; */
+    /* border-bottom: 1px solid #ccc; */
+}
+.pre-container-pm .title .title-name:nth-child(4){
+    border-radius: 0px 2px 2px 0px;
+    border-right: none;
+}
+.tag-active {
+	border-bottom: 0px;
+    background: #222222;
+    color: #ffffff;
+}
+
+
+#pre-contentPm .pre-param{
+    border-bottom: none;
+    background: none;
+    padding: 0 5px;
+    position: relative;
+}
+
+.pre-oneoftag{
+    padding-top: 3px;   
+}
+
+.pre-content>.pre-content-light{
+    overflow: visible;
+}
+
+.pre-content>.pre-content-effect,
+.pre-content>.pre-content-fog {
+    height: 430px;
+    overflow: hidden;
+    display: none;
+}
+.pre-content>.pre-content-after{
+    height: 430px;
+    overflow: visible;
+    display: none;
+}
+.pre-oneoftag .title,
+.light .title {
+	height: 35px;
+	font-size: 16px;
+	background: #dadce1;
+	line-height: 35px;
+	padding-left: 5px;
+}
+
+
+.pre-oneoftag .pre-param, .light .pre-param {
+		width: inherit;
+		height: 28px;
+		line-height: 28px;
+}
+
+.pre-param .twoMenue {
+    padding-left: 30px !important;
+}
+
+#pre-contentPm .pre-param .lightSource{
+    margin-left: 12px;
+}
+#pre-contentPm .pre-param span{
+    font-size: 12px;
+    padding-left: 12px;
+    float: left;
+}
+.pre-oneoftag .pre-param>span, .light .pre-param>span {
+    width: fit-content;
+    height: 25px;
+    line-height: 25px;
+}
+
+.pre-param-tit>.pre-afterManage {
+    padding-left: 20px !important;
+}
+
+.pre-param-tit>span{
+    padding-left: 0px !important;
+}
+
+/* 开关 */
+
+.switch {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    margin-right: 151.5px;
+    width: 24px;
+    height: 12px;
+    margin-top: 6px;
+}
+
+.switch .btn_fath {
+    width: 24px;
+    height: 12px;
+    background-color: #1c1f20; 
+}
+
+.btn_fath{
+    position: relative;
+    border-radius: 5px;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.switch .btn_fath .move{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow:none;
+    border: none;
+    background: #636161;
+}
+
+.btn_fath>.move {
+    z-index: 100;
+    position: absolute;
+    cursor: pointer !important;
+}
+.btn_fath .btnSwitch
+{
+    display: none;
+}
+.btnSwitch {
+    height: 20px;
+    width: 25px;
+    border: none;
+    color: #fff;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1;
+    margin: 0 2px;
+}
+
+.btn1 {
+    float: left;
+}
+
+.btn2 {
+    float: right;
+}
+
+.on .move {
+    background: #fff;
+}
+
+.on.btn_fath {
+    background-color: #f6931f;
+    /* width: 58px; */
+}
+
+.off.btn_fath {
+    background-color: #1c1f20;
+}
+
+
+.pre-paramTit-active::before {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.firstOrder>span::before {
+    position: absolute;
+    display: block;
+    left: 0px;
+    /* padding: 1px 5px; */
+    font-family: 'icomoon';
+    content: '\25BE';
+    /* -webkit-backface-visibility: hidden; */
+    backface-visibility: hidden;
+    font-size: 19px;
+}
+
+.firstOrder>span>a {
+    margin-left: 12px;
+}
+
+.pre-sameAsShadow {
+    opacity: 0.5;
+    display: none;
+}
+
+.secondOrder>span::before {
+    position: absolute;
+    display: block;
+    padding: 1px 0;
+    left: 20px;
+    font-family: 'icomoon';
+    content: '\25BE';
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-size: 19px;
+}
+
+.secondOrder>span>a {
+    margin-left: 15px;
+}
+
+/* 主光源 */
+#pre-contentPm{
+    height: auto;
+}
+#pre-contentPm .pre-title{
+    height: 30px;
+    background: #1c1f20;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    
+}
+
+.pre-container-pm .pre-title{
+    font-size: 12px;
+    line-height: 26px;
+    padding: 0 10px;
+    margin: 3px auto;
+}
+#pre-contentPm .pre-param .inputBox{
+    font-family: MicrosoftYaHeiUI;
+    color: #ccc;
+    font-size: 12px;
+    text-align: left;
+    outline: none;
+}
+
+#ambientLight-color,#hemisphereLight-color,#hemisphereLight-groundColor,#mainLight-color,#secondaryLight-color,#fog-color,#vignette-color{
+    width: 69px;
+    height: 24px;
+    margin-right: 107px;
+    margin-top: 0;
+    background: #1c1f20;
+    border-radius: 2px;
+    border: 1px solid #4d5153;
+}
+
+#amountEn,#amountCir,#amountM,#amountVerM,#amountHorM,#amounSec,#amountVerS,#amountHorS,#afterCai,#afterQiang,
+#afterCir,#afterThre,#afterCirE,#afterQiangE,#afterExpo,#afterLight,#afterComp,#afterSa,#afterGa,#positionSize,#positionScat,
+#positionTime,#positionHor,#afterViOffset,#afterFiQiang,#afterFiWidth,#afterFiCount,#afterRBSX,#afterRBSY{
+    position: absolute;
+    width: 40px;
+    padding: 0 5px;
+    height: 24px;
+    margin-top: 0;
+    right: 20px;
+    background: #1c1f20;
+    border-radius: 2px;
+    border: 1px solid #4d5153;
+}
+
+#fogVisibilityFar{
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    margin-top: 0;
+    right: 20px;
+    padding: 0 0 0 5px;
+    background: #1c1f20;
+    border-radius: 2px;
+    border: 1px solid #4d5153;
+}
+
+#fogVisibilityNear{
+    position: absolute;
+    width: 28px;
+    height: 24px;
+    margin-top: 0;
+    right: 72px;
+    padding: 0 0 0 5px;
+    background: #1c1f20;
+    border-radius: 2px;
+    border: 1px solid #4d5153;
+}
+
+
+.pre-content .inputBox {
+    float: right;
+    line-height: 20px;
+}
+
+.pre-param .progressBar {
+    width: 173px;
+    float: right;
+    display: inline-block;
+}
+
+.pre-param .progressBar>.line {
+    position: relative;
+    left: 107px;
+}
+
+#pre-contentPm .pre-param .progressBar{
+    margin-top: -3px;
+    width: 170px !important;
+}
+
+#pre-contentPm .pre-param .progressBar .bar{
+    background: #222222;
+    border-radius: 6px;
+    border: none;
+    height: 8px;
+}
+.bar {
+    position: relative;
+    right: 0px;
+    display: inline-block;
+    width: 105px;
+}
+
+
+
+.progressBar>.amount,
+.pre-param>.inputBox {
+    height: inherit;
+    /*border:1px solid red;*/
+    color: #f6931f;
+}
+
+.pre-param>.inputBox {
+    margin-top: 2px;
+}
+
+.pre-content .color {
+    font-size: 12px;
+}
+
+
+#pre-contentPm .pre-param .progressBar .bar .ui-slider-range{
+    background: #ff7f00;
+    margin-left: -6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.bar .ui-slider-range {
+    background: #ff7f00;
+}
+/* #pre-contentPm .pre-param .progressBar .bar .ui-slider-handle{
+    border-color: #ff7f00;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+} */
+
+.pre-container-pm #pre-contentPm .pre-param .progressBar .bar .ui-slider-handle {
+    border-color: #ff7f00;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+  }
+
+
+.bar .ui-slider-handle {
+    border-color: #ff7f00;
+}
+.bar .ui-slider-handle:focus {
+    border-color: #ff7f00;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.1em;
+    margin-left: -.6em;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 0.9em;
+    height: 0.9em;
+    cursor: default;
+}
+
+.colpick {
+    /* position: absolute;
+    left: 60px !important;
+    top: 106px;
+    /*display: block;
+    z-index: 105; */
+    position: relative !important;
+    z-index: 105;
+    left: 51px !important;
+    top: 0px !important;
+}
+
+#colorpicker_3{
+    left: 27px !important;
+}
+
+#pre-contentPm .pre-param .newInput{
+    position: absolute;
+    width: 14px;
+    background: #1c1f20;
+    border-radius: 2px;
+    border: 1px solid #4d5153;
+    right: 13px;
+    height: 24px;
+    top: -3px;
+}
+.panel-radio-border {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 3px;
+    left: -4px;
+    background-color: #fff;
+    border: 1px solid #dcdee2;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+.panel-radio-checked {
+    border-color: #ff6110;
+}
+.panel-radio-border .panel-radio {
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+.panel-radio-border::after {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 3px;
+    top: 3px;
+    border-radius: 6px;
+    display: table;
+    border-top: 0;
+    border-left: 0;
+    content: " ";
+    background-color: #ff6110;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0);
+}
+.panel-radio-checked::after {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+#pre-contentPm .pre-param .newInput .top{
+    height: 12px;
+    cursor: pointer;
+    background: url(../../img/preset/topTriangle.png) no-repeat;
+    background-size: 6px 6px;
+    background-position: center;
+    opacity: 0.5;
+    border-bottom: 0.5px solid #5b5a5b;
+}
+
+#pre-contentPm .pre-param .newInput .bottom{
+    height: 12px;
+    background: url(../../img/preset/bottomTriangle.png) no-repeat;
+    background-size: 6px 6px;
+    background-position: center;
+    opacity: 0.5;
+    cursor: pointer;
+    position: absolute;
+    width: 12px;
+    top: 11px;
+}
+
+#fog-visibility{
+    width: 68px !important;
+    right: 18px;
+}
+
+.panel-radio-border-light::after{
+    left: 2px;
+    top: 2px;
+}
+#pre-contentPm .pre-vignetteParam .pre-param span,#pre-contentPm .pre-filmParam .pre-param span{
+    font-size: 12px;
+    padding-left: 30px;
+    float: left;
+}
+
+#pre-contentPm .pre-vignetteParam .colpick{
+    position: relative !important;
+    z-index: 105;
+    left: 33px !important;
+    top: 0px !important;
+}
