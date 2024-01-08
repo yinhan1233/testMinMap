@@ -11,7 +11,7 @@ let picturesJson = [
 
 let equipmentArrays = []
 
-
+console.log('_______________________________');
 
 /**
  * 说明：通过动态加载场景 动态加载建筑里的楼层
