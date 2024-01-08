@@ -1,0 +1,756 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+:root {
+	--animate-duration: 1s;
+	--animate-delay: 1s;
+	--animate-repeat: 1;
+}
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-duration: var(--animate-duration);
+	animation-duration: var(--animate-duration);
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.animated-fast{
+    -webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-duration: calc(var(--animate-duration)/2);
+	animation-duration: calc(var(--animate-duration)/2);
+}
+
+.animated-bounceInUp {
+	-webkit-animation-name: bounceInUp;
+	animation-name: bounceInUp;
+}
+@keyframes bounceInUp {
+	0%,100%{
+		-webkit-animation-timing-function: 0.1;
+		animation-timing-function: 0.1;
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0,5px,0) scaleY(1);
+		transform: translate3d(0,5px,0) scaleY(1);
+	}
+
+	100% {
+        opacity: 1;
+		-webkit-transform: translate3d(0,0,0) scaleY(.95);
+		transform: translate3d(0,0,0) scaleY(.95);
+        -webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+
+@-webkit-keyframes bounceInUp {
+	0%,100%{
+		-webkit-animation-timing-function: 0.1;
+		animation-timing-function: 0.1;
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0,5px,0) scaleY(1);
+		transform: translate3d(0,5px,0) scaleY(1);
+	}
+
+	100% {
+        opacity: 1;
+		-webkit-transform: translate3d(0,0,0) scaleY(.95);
+		transform: translate3d(0,0,0) scaleY(.95);
+        -webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+
+.pre-topCard-box1{
+    position: relative;
+    background-image: url("../img/preset/topcard/bgone.png");
+    /* width: 135px;
+    height: 105px; */
+    line-height: 16px;
+    background-size: 100% 100%;
+    color: #ffffff;
+    text-align: left;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    padding: 0px;
+}
+.pre-topCard-box1 .pre-topCard-box-content{
+    min-width: 150px;
+    min-height: 48px;
+    width: auto;
+    height: 121px;
+}
+.pre-topCard-box1 .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 67%;
+    padding: 8px;
+    list-style: none;
+    margin: 0;
+}
+.pre-topCard-box1 .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-top: 3px;
+}
+
+
+.pre-topCard-cusdefault{
+    position: absolute;
+    line-height: 1.3em;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Open Sans,sans-serif";
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0px;
+    z-index: 1;
+    height: 35px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.pre-topCard-cusdefault .pre-topCard-box-content .pre-topCard-content-list{
+    
+    left: 0;
+    top: 0;
+    background-color:rgba(33,33,33,.8);
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    border-radius: 4px;
+    display: inline-flex;
+}
+
+.pre-topCard-cusdefault .pre-topCard-box-content .pre-topCard-content-list::before{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 92%;
+    right: 50%;
+    display: block;
+    content: "";
+    border: 5px solid transparent;
+    border-right-color: rgba(33,33,33,.8);
+    border-left: 0;
+}
+
+.pre-topCard-cusdefault .pre-topCard-box-content{
+    height: 121px;
+}
+.pre-topCard-cusdefault .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-left: 15px;
+}
+
+.pre-topCard-cusdefault .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    display:inline-block;
+}
+
+.pre-topCard-cusdefault .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item span{
+    white-space: nowrap;
+}
+
+.pre-topCard-cusdefault .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+    display:inline-block;
+}
+
+/**
+ * 默认样式
+ */
+.pre-topCard-box-default{
+    pointer-events: none;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    width: auto;
+    /* max-width: 252px; */
+    min-height: 23px;
+    left: 0;
+    display: flex;
+    font-family: Open Sans,sans-serif;
+    font-size: 12px;
+    line-height: 1.3em;
+    text-align: left;
+    cursor: default;
+    flex-direction: column;
+}
+
+.pre-topCard-box-default::before{
+    position: absolute;
+    /* top: 8px;
+    right: 100%; */
+    border: 5px solid transparent;
+    /* border-right-color: rgba(0,0,0,.8); */
+    top: 100%;
+    left: 50%;
+    display: block;
+    content: "";
+    border-top-color: rgba(0,0,0,.8);
+    border-bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+.pre-topCard-box-default .pre-topCard-box-content{
+    padding: 6px;
+    font-family: sans-serif;
+    color: #fff;
+    cursor: auto;
+    user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    -moz-user-select: all;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 4px;
+}
+.pre-topCard-box-default .pre-topCard-box-content .pre-topCard-content-list{
+    /* font-weight: 700; */
+    overflow: hidden;
+    font-family: "Microsoft YaHei", "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans GB", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.pre-topCard-box-default .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item:first-child{
+    display: none;
+}
+/**
+ * 样式1
+ */
+.pre-topCard-box-one{
+    position: relative;
+    line-height: 1.3em;
+    color: #4b4b49;
+    text-align: center;
+    max-width: 140px;
+    min-width: 100px;
+    font-family: "DIN Alternate";
+    font-size: 16px;
+    padding: 0px;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+.pre-topCard-box-one .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    background-color:#e7e7eb;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    border-radius: 19px 19px 19px 0;
+}
+.pre-topCard-box-one .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-left: 15px;
+}
+.pre-topCard-box-one .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    /* display:block; */
+}
+.pre-topCard-box-one .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item span{
+    display:none;
+}
+.pre-topCard-box-one .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+    display:block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/**
+ * 样式2
+ */
+.pre-topCard-box-two{
+    position: relative;
+    line-height: 1.3em;
+    max-width: 140px;
+    min-width: 110px;
+    color: #ffffff;
+    text-align: left;
+    font-family: "微软雅黑";
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0px;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+.pre-topCard-box-two .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    background-color:rgba(0,0,0,.68);
+    width: 100%;
+    padding: 5px 10px;
+    list-style: none;
+    margin: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pre-topCard-box-two .pre-topCard-box-content .pre-topCard-content-list::before{
+    position: absolute;
+    top: 24%;
+    right:100%;
+    display: block;
+    content: "";
+    border: 7px solid transparent;
+    border-right-color: rgba(0,0,0,.68);
+    border-left: 0;
+}
+.pre-topCard-box-two .pre-topCard-box-content{
+    width: auto;
+}
+.pre-topCard-box-two .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-top: 3px;
+}
+
+
+
+
+/**
+ * 样式3
+ */
+.pre-topCard-box-three{
+    position: relative;
+    background-image: url("../img/topcard/bluebubble.png");
+    width: 41px;
+    height: 42px;
+    /* line-height: 16px; */
+    background-size: 100% 100%;
+    color: #0f0248;
+    text-align: center;
+    font-family: "思源黑体 CN";
+    font-size: 6px;
+    padding: 0px;
+}
+.pre-topCard-box-three .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 67%;
+    padding: 2px;
+    list-style: none;
+    margin: 0;
+}
+.pre-topCard-box-three .pre-topCard-box-content{
+    /* min-width: 150px; */
+    width: auto;
+}
+.pre-topCard-box-three .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-top: 3px;
+}
+.pre-topCard-box-three .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    display:none;
+}
+.pre-topCard-box-three .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item span{
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+    height: 100%;
+    line-height: 32px;
+    text-align: center;
+}
+.pre-topCard-box-three .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+    display:block;
+}
+
+/**
+ * 样式4
+ */
+.pre-topCard-box-four{
+    position: relative;
+    line-height: 1.3em;
+    color: #898e99;
+    text-align: left;
+    min-width: 120px;
+    max-width: 140px;
+    font-family: "Segoe UI Emoji";
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0px;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+.pre-topCard-box-four .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    background-color:rgba(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    line-height: 24px;
+    margin: 0;
+    box-shadow: rgba(0,0,0,0.6) 0px 1px 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pre-topCard-box-four .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-top: 3px;
+}
+.pre-topCard-box-four .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    display: block;
+    font-size: 10px;
+    max-width: 120px;
+    color: #cfd2d3;
+    overflow: hidden;
+}
+.pre-topCard-box-four .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+    display: block;
+    overflow: hidden;
+}
+
+
+/* 样式五 */
+.pre-topCard-box-five{
+    position: relative;
+    height: 26px;
+    line-height: 1.3em;
+    color: #ffffff;
+    text-align: center;
+    max-width:170px;
+    font-family: "等线";
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0px;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.pre-topCard-box-five .pre-topCard-box-content .pre-topCard-content-list{
+    left:26px;
+    top: 0;
+    /* background-color:rgba(0, 0, 0, 0.6); */
+    width: 100%;
+    list-style: none;
+    line-height: 25px;
+    margin: 0;
+    
+}
+.pre-topCard-box-five .pre-topCard-box-content{
+    height: 26px;
+}
+.pre-topCard-box-five .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-top: 3px;
+}
+
+.pre-topCard-box-five .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    display: block;
+    position: absolute;
+    max-width: 25px;
+    top:0%;
+    left:-13px;
+    background-color: #e6951f;
+    height:24px;
+    width: 24px;
+    line-height: 22px;
+    border-radius: 20px;
+    border: 1.5px #e3caa8 solid;
+    font-size: 12px;
+    color: #ffe88b;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pre-topCard-box-five .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+    display: block;
+    background-color: rgb(0,0,0,0.4);
+    height:24px;
+    padding-left: 20px;
+    padding-right: 13px;
+    min-width:110px;
+    max-width:160px;
+    border-radius:0px 13px 13px 0px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+    color: #ffffff;
+}
+
+/* 样式六 */
+.pre-topCard-box-six{
+    position: relative;
+    line-height: 1em;
+    color: #030303;
+    text-align: center;
+    max-width: 140px;
+    min-width: 110px;
+    font-family: "DIN Alternate";
+    font-size: 12px;
+    padding: 0px;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+.pre-topCard-box-six .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    background-color:rgb(255, 255, 255,0.68);
+    width: 100%;
+    padding: 0 3px 0 3px;
+    list-style: none;
+    margin: 0;
+    border-radius: 19px;
+    /* overflow: hidden;
+    white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+}
+.pre-topCard-box-six .pre-topCard-box-content .pre-topCard-content-list::before{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 85%;
+    right: 48%;
+    display: block;
+    content: "";
+    border: 5px solid transparent;
+    border-right-color: rgba(255, 255, 255,0.68);
+    border-left: 0;
+}
+.pre-topCard-box-six .pre-topCard-box-content{
+    /* height: 121px; */
+}
+.pre-topCard-box-six .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-left: 15px;
+}
+
+.pre-topCard-box-six .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    display:none;
+}
+
+.pre-topCard-box-six .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item span{
+    display:none;
+}
+
+.pre-topCard-box-six .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+    display:block;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}
+
+/* 样式七 */
+.pre-topCard-box-seven{
+    position: relative;
+    line-height: 1.3em;
+    font-size: 12px;
+    max-width: 110px;
+    min-width: 110px;
+    color: #6c6c6c;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Segoe UI Emoji";
+    padding: 0px;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.pre-topCard-box-seven .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    background-color:rgba(255,255,255);
+    width: 100%;
+    padding:5px;
+    list-style: none;
+    margin: 0;
+    border-radius:5px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}
+
+.pre-topCard-box-seven .pre-topCard-box-content .pre-topCard-content-list::before{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 92%;
+	right: 46%;
+    display: block;
+    content: "";
+    border: 7px solid transparent;
+    border-right-color: rgba(255,255,255);
+    border-left: 0;
+}
+.pre-topCard-box-seven .pre-topCard-box-content{
+    width: auto;
+    /* height: 121px; */
+}
+.pre-topCard-box-seven .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-top: 3px;
+}
+
+.pre-topCard-box-seven .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    display: block;
+    font-weight: 600;
+    margin-right: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+    color: #ff2359;
+}
+
+.pre-topCard-box-seven .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+	display:block;
+	padding: 5px;
+	max-width: 140px;
+	overflow: hidden;
+	white-space: nowrap;
+	/* text-overflow: ellipsis; */
+}
+
+/* 样式八 */
+.pre-topCard-box-eight {
+	position: relative;
+    background-image: url('../img/topcard/blueSign.png');
+    width: 50px;
+    height: 21px;
+	line-height: 1em;
+	color: #44403e;
+    font-weight: 600;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	padding: 0px;
+	z-index: 1;
+	display: inline-flex;
+	flex-direction: column;
+}
+.pre-topCard-box-eight .pre-topCard-box-content .pre-topCard-content-list {
+	left: 0;
+	top: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-radius: 19px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.pre-topCard-box-eight .pre-topCard-box-content {
+	/* height: 121px; */
+}
+.pre-topCard-box-eight .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child) {
+	margin-left: 15px;
+}
+
+.pre-topCard-box-eight .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key {
+	display: none;
+}
+
+.pre-topCard-box-eight .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value {
+	display: block;
+	padding: 5px;
+    max-width: 100px;
+	left: 50px;
+    position: absolute;
+	top:-7px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* 样式九 */
+.pre-topCard-box-nine{
+    position: relative;
+    max-width: 140px;
+    min-width: 140px;
+    line-height: 1em;
+    color: #272726;
+    text-align: center;
+    font-family: "DIN Alternate";
+    font-size: 12px;
+    padding: 0px;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+.pre-topCard-box-nine .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    background-color:rgb(229, 229, 234);
+    list-style: none;
+    margin: 0;
+    padding-right: 5px;
+    border-radius: 1px 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+    font-family: "Microsoft YaHei", "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans GB", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.pre-topCard-box-nine .pre-topCard-box-content{
+    /* height: 121px; */
+}
+.pre-topCard-box-nine .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-left: 15px;
+}
+
+.pre-topCard-box-nine .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    display:none;
+}
+
+.pre-topCard-box-nine .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item span{
+    display:none;
+}
+
+.pre-topCard-box-nine .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+    display:block;
+    padding: 5px;
+    /* max-width: 140px; */
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}
+
+/* 样式十 */
+.pre-topCard-box-ten{
+    position: relative;
+    max-width: 140px;
+    min-width: 140px;
+    line-height: 1em;
+    color: #b3bce5;
+    text-align: center;
+    font-family: "DIN Alternate";
+    font-size: 12px;
+    padding: 0px;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+.pre-topCard-box-ten .pre-topCard-box-content .pre-topCard-content-list{
+    left: 0;
+    top: 0;
+    background-color:#222a58;
+    list-style: none;
+    margin: 0;
+    padding-right: 5px;
+    border-radius: 7px 0px;
+    border: 1px #8c97d3 solid;
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+    font-family: "Microsoft YaHei", "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans GB", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.pre-topCard-box-ten .pre-topCard-box-content{
+    /* height: 121px; */
+}
+.pre-topCard-box-ten .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item:not(:first-child){
+    margin-left: 15px;
+}
+
+.pre-topCard-box-ten .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-key{
+    display:none;
+}
+
+.pre-topCard-box-ten .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item span{
+    display:none;
+}
+
+.pre-topCard-box-ten .pre-topCard-box-content .pre-topCard-content-list .pre-topCard-content-list-item .pre-topCard-list-item-value{
+    display:block;
+    padding: 5px;
+    /* max-width: 140px; */
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态排序柱状图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .span {
+            color: white;
+            vertical-align: middle;
+            font-size: 16px;
+            text-indent: 1em;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <div style="background-color:rgba(26,26,26,0.3);height: 100vh;width: 100%;">
+        <div id="main1" style=" position: relative;
+    background: url('https://www.thingjs.com/uploads/wechat/568869/file/第一屏重构/上半部分.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    height: 10vh;
+    width: 100%;
+    line-height:10vh;
+    font-size:18px;
+    text-align:left;
+    text-indent:1em;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #ffffff;
+    "><span>全国信源影响力</span>
+        </div>
+        <div id="main" style="height: 90vh;width: 100%;
+    background: url('https://www.thingjs.com/uploads/wechat/568869/file/第一屏重构/下半部分.png') 0 0 no-repeat;
+    background-size: 100% 100%;">
+        </div>
+    </div>
+    <script>
+        var myChart = echarts.init(document.getElementById('main'));
+        var option;
+        var influenceData = [];
+        var mediaName = [];
+        var value = [];
+        var that = this;
+
+        window.setDataTunnel = this.setData;
+        
+// 
+        // *********************************************************************************
+        // 定时一分钟
+        setTimeout(() => {
+            // name = [];
+            // value = [];
+            influenceData.forEach((param, index) => {
+                // console.log(param.data);
+                mediaName.push(param.name);
+                value.push(param.value);
+                // console.log("name:", name);
+                // console.log("value:", value);
+            });
+            run();
+        }, 300)
+        // 每五分钟执行一次
+        setInterval(() => {
+            // console.log("data:" + data);
+            mediaName.splice(0, mediaName.length);
+            value.splice(0, value.length);
+            influenceData.forEach((param) => {
+                mediaName.push(param.name);
+                value.push(param.value);
+                // console.log("name:", name);
+                // console.log("value:", value);
+            });
+        }, 30000);
+        // for (let index = 0; index < data.length; index++) {
+        //     const element = array[index];
+
+        // }
+        // for (let i = 0; i < 20; ++i) {
+        //     data.push(Math.round(Math.random() * 200));
+        // }
+        option = {
+            xAxis: {
+                type: 'value', //表示用数据的最大值作为X轴最大值，视觉效果更
+                show: false,
+                axisLine: {
+                    show: false,
+                },
+                axisLabel: {
+                    fontSize: 12,
+                    color: 'white'
+                },
+                splitLine: {
+                    show: false
+                }
+            },
+            yAxis: {
+                type: 'category',
+                data: mediaName,//报纸名
+                axisLine: {
+                    show: false,
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                },
+                axisLabel: {
+                    fontSize: 14,
+                    color: 'white',
+                    fontFamily: '微软雅黑'
+                },
+                inverse: true, //设为true表示Y轴 从下往上 是 从小到大 的排序
+                animationDuration: 300, //表示第一次柱条排序动画的时长为300
+                animationDurationUpdate: 300, //表示第一次后 柱条排序动画的时长为300
+                max: 9, //只显示最大的10条 ，不设置则显示所有柱条
+            },
+            grid: {
+                left: '5%',
+                right: '8%',
+                top: '3%',
+                bottom: '3%',
+                containLabel: true
+            },
+            series: [
+                {
+                    realtimeSort: true, //设为true表示开启Y轴的动态排序效
+                    type: 'bar',
+                    data: value,
+                    itemStyle: {
+                        color: '#4779ab',
+                        borderWidth: 1,
+                        shadowBlur: 5,
+                        shadowColor: "#4779ab",
+                        shadowOffsetX: 0,
+                        shadowOffsetY: 0,
+                        opacity: 1,
+                        shadowBlur: 10,
+                        type: "solid",
+                        width: 3
+                    },
+                    label: {
+                        show: true,
+                        position: 'right',
+                        color: 'white',
+                        fontFamily: '微软雅黑',
+                        fontSize: 16,
+                        valueAnimation: true,
+                        opacity: 1
+                    },
+                    // 移入当前的柱状图时改变颜色
+                    emphasis: {
+                        itemStyle: {
+                            color: '#83f5fd',
+                            borderWidth: 1,
+                            borderColor: "#54b1e7"
+                        },
+                    }
+                }
+            ],
+            legend: {
+                show: true
+            },
+            //animationDuration 设为 0，表示第一份数据不需要从 0 开始动画（如果希望从 0 开始则设为和 animationDurationUpdate 相同的值）
+            animationDuration: 0,
+
+            //animationDurationUpdate 建议设为 3000 表示每次更新动画时长，这一数值应与调用 setOption 改变数据的频率相同
+            animationDurationUpdate: 3000
+
+            // AnimationEasing:'linear',
+            // AnimationEasingUpdate:'linear'
+        };
+
+        function setData(listData) {// 1.参数listData是从ThingJs场景中传入的后端数据
+            influenceData = [];
+            listData.data.forEach((param, index) => {
+                influenceData.push(param);
+            });
+            console.log("listData");
+            console.log(listData.data);
+            // 以上执行过程是遍历listData，将其每个元素push入组件内的youngList中，不可直接写成this.youngList = listData
+            // this.youngList.push(listData);
+            console.log("influenceData");
+            console.log(influenceData);
+        };
+
+        function run() {
+            myChart.setOption(option);
+        }
+
+        window.parent.getInfluenceData();
+        run();
+        setInterval(() => {
+            window.parent.getInfluenceData();
+            run();
+        }, 300000);
+
+        setTimeout(function () {
+            run();
+        }, 3000);
+
+        //以 animationDurationUpdate 的频率调用 setInterval，更新数据值，显示下一个时间点对应的柱条排序
+
+        option && myChart.setOption(option);
+
+
+        function callFunctionInMain() {
+
+            var name = document.getElementById("p1").innerHTML;
+
+            var message = {
+                'funcName': 'changeLevel',
+                'param': {
+                    'name': name
+                }
+            }
+
+            //向父窗体发送消息 
+            //第一个参数是具体的信息内容，
+            //第二个参数是接收消息的窗口的源（origin），即"协议 + 域名 + 端口"。也可以设为*，表示不限制域名，向所有窗口发送
+            window.parent.postMessage(message, '*');
+        }
+
+        function changeText(value) {
+
+            document.getElementById("p1").innerHTML = value;
+        }
+
+        // 监听从父窗体传来的消息
+        window.addEventListener('message', function (e) {
+
+            var data = e.data;// e.data为传递过来的数据 
+            var funcName = data.funcName;// 需要调用的函数名
+            var param = data.param;
+            window[funcName](param.name);
+
+            console.log(e.origin);  //e.origin 为调用 postMessage 时消息发送方窗口的 origin（域名、协议和端口）
+            console.log(e.source);  //e.source 为对发送消息的窗口对象的引用，可以使用此来在具有不同origin的两个窗口之间建立双向通信			
+
+        })
+        window.onresize = function () { myChart.resize(); }
+    </script>
+
+</body>
+
+</html>

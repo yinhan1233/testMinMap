@@ -1,0 +1,83 @@
+#pre-topcard-list{
+    position: absolute;
+    left: calc(100% - 340px);
+    top: 10px;
+  }
+  .pre-setting-panel .pre-panelModel .pre-panelBody .pre-params-setting-lists{
+    overflow: visible;
+  }
+  .pre-setting-panel .pre-panelModel .pre-panelHeader .pre-topcard-panelNumber{
+    color: #c6c6c6;
+      font-size: 12px;
+      cursor: default;
+    }
+
+  .pre-setting-panel .pre-panelModel .pre-panelBody .cards{
+    width: 96px;
+    height: 54px;
+    text-align: center;
+    top: 11px;
+    margin-left: 3.2px;
+    display: inline-block;
+    margin-bottom: 13px;
+    transition: box-shadow .2s ease;
+    position: relative;
+    background: #3d3f40;
+    border-radius: 2px;
+    animation: pat .8s 1;
+    cursor: pointer;
+    }
+    @keyframes pat
+    {
+    0% {opacity: 0;
+      transform: scale(1.2, 1.2);
+    } 100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+    }
+    
+    .pre-setting-panel .pre-panelModel .pre-panelBody .cards:hover{
+      box-shadow: 0 1px 1px rgba(97, 108, 121, 0.3), 0 7px 18px 0 rgba(97, 108, 121, 0.4);
+    }
+    .pre-setting-panel .pre-panelModel .pre-panelBody .cards .card-body{
+      font-size: 12px;
+      display: none;
+      position: absolute;
+      bottom: -14px;
+      width: auto;
+      height: 22px;
+      background: #000000;
+      border-radius: 2px;
+      opacity: 0.6976;
+      font-size: 12px;
+      padding: 0 3px;
+      left: calc(100% - 33px);
+      z-index: 2;
+      overflow: hidden;
+      /* text-overflow: ellipsis;
+      white-space: nowrap; */
+    }
+    .pre-setting-panel .pre-panelModel .pre-panelBody .cards .card-body p{
+      overflow: hidden;
+      margin-top: 2px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .pre-setting-panel .pre-panelModel .pre-panelBody .cards:hover .card-body{
+      display: block;
+    }
+    
+    .pre-setting-panel .pre-panelModel .pre-panelBody .scene-boxs .cards a img{
+      /* height: 97%;
+      width: 98%;
+      margin: auto;
+      margin-top: 1%;
+      margin-bottom: 1%; */
+      /* height: 99%;
+  width: 99%; */
+  border-radius: 2px;
+  display: flex;
+  text-align: center;
+    }
+    

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+        *{
+            padding:0;
+            margin:0;
+        }
+		.nav {
+			vertical-align:middle;
+			/* right: 10%; */
+			/* left: 72%; */
+			left: 0;
+			top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			/* bottom: 52.11%;
+           top: 19.14%; */
+			width: 100vw;
+			height: 100vh;
+			/* width:20%;
+             height: 9.375%; */
+			/* backgroundColor: rgba(0, 0, 0, 0.486); */
+			z-index: 999;
+			overflow: hidden;
+		}
+
+		#img1 {
+			border-color: '#48ece7';
+            display:inline-block;
+            vertical-align:middle;
+			/* margin-top:20.83%; */
+             /* margin-top:1.95%;
+            margin-bottom:1.95%; */
+			margin-left: 5%;
+			margin-right: 4.76%;
+			background: url('https://www.thingjs.com/uploads/wechat/547354/file/左侧导航按钮/nav图标/icon1.png') 0 0 no-repeat;
+			background-size: 100% 100%;
+		}
+
+		#img2 {
+			border-color: 'white';
+            display:inline-block;
+            vertical-align:middle;
+            /* margin-top:20.83%; */
+             /* margin-top:1.95%;
+              margin-bottom:1.95%; */
+			margin-left: 5%;
+			margin-right: 4.76%;
+			background: url('https://www.thingjs.com/uploads/wechat/547354/file/左侧导航按钮/nav图标/icon2.png') 0 0 no-repeat;
+			background-size: 100% 100%;
+		}
+
+		#img3 {
+			border-color: 'white';
+            display:inline-block;
+            vertical-align:middle;
+             /* margin-top:1.95%;
+              margin-bottom:1.95%; */
+			margin-left: 5%;
+			margin-right: 5%;
+			background: url('https://www.thingjs.com/uploads/wechat/547354/file/左侧导航按钮/nav图标/icon3.png') 0 0 no-repeat;
+			background-size: 100% 100%;
+		}
+
+        
+
+		.nav button {
+			/* width: 20%;
+			height: 90%; */
+
+            /* width: auto;
+			height: 55.83%;
+            margin-right:2.05%; */
+			/* margin-top: 1%; */
+            display:inline-block;
+            vertical-align:middle;
+            padding-bottom: 8%;
+            width: 8%;
+            height: 0;
+			border-radius: 100%;
+			border: 2px solid white;
+			cursor: pointer;
+			/* background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center; */
+			backgroundColor: transparent;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="nav">
+		<button id='img1' onclick="toPage(this.id)"></button>
+        <button id='img2' onclick="toPage(this.id)"></button>
+        <button id='img3' onclick="toPage(this.id)"></button>
+    </div>
+</body>
+<script type="text/javascript">
+    //传给父页面
+    function toPage(id){
+        parent.toPage(id);
+    }
+    //获取父页面传值
+    var pageNum = window.parent.retPageNum();
+    console.log(pageNum);
+    var button1 = document.getElementById("img1");
+    var button2 = document.getElementById("img2");
+    var button3 = document.getElementById("img3");
+
+    function inti(){
+        //按钮显示
+        button1.style.display='inline-block';
+        button2.style.display='inline-block';
+        button3.style.display='inline-block';
+        //按钮边框
+        button1.style.borderColor='white';
+        button2.style.borderColor='white';
+        button3.style.borderColor='white';
+        button3.disabled = false;
+        button3.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+
+    }
+
+    
+    //获取父页面传值
+    if (pageNum == 1) {
+        this.inti();
+        button1.style.borderColor='#48ece7';
+        //返回键变灰
+        button3.disabled = true;
+        button3.style.backgroundColor = '#555555';
+        
+    }
+    else if(pageNum == 2){
+        this.inti();
+        button2.style.borderColor='#48ece7';
+        
+    }
+    else {
+            this.inti();
+            button1.style.display='none';
+            button2.style.display='none';
+            
+    }
+
+    
+</script>
+
+</html>
